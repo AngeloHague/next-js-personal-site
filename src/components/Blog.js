@@ -1,14 +1,14 @@
 import React from 'react'
 import { getSortedPostsData } from '@/lib/posts'
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
     
-    return {
-      props: {
-        allPostsData,
-      },
-    };
-  }
+//     return {
+//       props: {
+//         allPostsData,
+//       },
+//     };
+//   }
 
 export default async function Blog() {
   const allPostsData = await getSortedPostsData();
