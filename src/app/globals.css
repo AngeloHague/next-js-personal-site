@@ -155,7 +155,7 @@ nav ul {
 
 .sections section#hero .logo-container {
   background: linear-gradient(180deg, #270039 0%, #231A5B 100%);
-  max-width: 81.6rem;
+  /* max-width: 81.6rem; */
   height: 60%;
   margin: auto;
   text-align: center;
