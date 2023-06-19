@@ -26,7 +26,7 @@ export default function HomeSections()
     // const sectionMetadata = getSectionMetadata();
     const sections = sectionMetadata.map(async(slug) => (
         <section id={slug}>
-            <Markdown>{getSection(slug)}</Markdown>
+            <div className="content"><Markdown>{getSection(slug)}</Markdown></div>
         </section>
     ));
     return <>{sections}</>;

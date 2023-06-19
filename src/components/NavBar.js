@@ -15,11 +15,12 @@ export default function NavBar() {
             <div class="nav_bar"></div>
             <input type="checkbox" id="side_menu_checkbox" />
             <label id="hamburger" for="side_menu_checkbox">
-                <a tabIndex='0'><span /></a>
+                <a tabIndex='1'><span /></a>
             </label>
             <nav>
+                <div className="logo">Angelo Hague</div>
                 <ul>
-                    {links.map(link => (<a href={link[1]}><li>{link[0]}</li></a>))}
+                    {links.map(link => (<li><a href={link[1]} tabIndex='1'>{link[0]}</a></li>))}
                 </ul>
             </nav>
         </header>

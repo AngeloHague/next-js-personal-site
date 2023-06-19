@@ -10,12 +10,19 @@ html, body {
   margin: 0;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  min-width: 280px;
+}
+
+img {
+  pointer-events: none;
 }
 
 h1, h2, h3, p, button {
   padding: 0;
   margin: 0;
   color: #fff;
+  font-weight: 400;
+  font-style: normal;
 }
 
 button {
@@ -49,7 +56,7 @@ button {
 }
 
 #hamburger {
-  position: fixed;
+  position: absolute;
   /* float: right; */
   top: 0;
   right: 0;
@@ -102,19 +109,45 @@ nav ul {
   backdrop-filter: blur(4px);
   box-sizing: border-box;
   padding: 60px 0 0 0;
+  width: 100%;
 }
 
 #nav ul li {
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  padding: 16px 24px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
   text-align: center;
 }
 
+#nav nav .logo,
 #nav ul a {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  padding: 16px 24px;
   color: white;
   text-decoration: none;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
 }
+#nav nav .logo {
+  display: none;
+  #nav nav .logo {
+    display: flex;
+    align-items: center;
+  }
+}
+
+#nav nav .logo,
+a {
+  transition: all 0.4s;
+  letter-spacing: .25em;
+}
+a:hover {
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.75);
+  letter-spacing: .5em;
+}
+
 #side_menu_checkbox:checked ~ nav,
 #nav nav:focus-within {
   display: block;
@@ -167,6 +200,17 @@ nav ul {
   height: 60%;
   margin: auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sections section#hero .logo-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .sections section#hero .logo-container .stars {
@@ -176,7 +220,6 @@ nav ul {
   width: 100%;
   height: 60%;
   object-fit: cover;
-
 }
 
 .sections section#hero .logo-container .moon {
@@ -185,6 +228,19 @@ nav ul {
   margin: auto;
   padding-top: 32px;
   shape-rendering: geometricPrecision;
+  transition: all 0.4s;
+}
+
+.sections section#hero .logo-container h1 {
+  /* width: 260px; */
+  margin: auto;
+  padding: 14vh 16px 0 16px;
+}
+
+.sections section#hero .logo-container h3 {
+  padding-top: 8px;
+  letter-spacing: .05em;
+  transition: letter-spacing 0.4s;
 }
 
 .sections section#hero .dive_deeper {
@@ -231,7 +287,7 @@ nav ul {
 
 .page_nav div {
   background-color: #fff;
-  height: 183px;
+  height: clamp(192px, 35%, 320px);
   width: 24px;
   margin: auto;
   margin-left: 12px;
@@ -263,9 +319,8 @@ nav ul {
 h1 {
   text-transform: uppercase;
   text-align: center;
-  font-size: clamp(3rem, 60vw, 5.6rem);
+  font-size: clamp(3rem, 60vw, 4.8rem);
   line-height: 100%;
-  padding-top: 14vh;
   font-weight: 400;
 }
 
@@ -312,4 +367,86 @@ p {
 
 .sections section::last-of-type {
   margin-bottom: 0;
+}
+
+@media (min-width: 480px) {
+  .sections section#hero .logo-container h3 {
+    letter-spacing: .25em;
+  }
+}
+
+@media (min-width: 800px) {
+  #hamburger {
+    display: none;
+  }
+  /* .nav_bar {display: none;} */
+  #side_menu_checkbox:checked ~ nav,
+  #nav nav {
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* margin-top: -100%; */
+    width: 100%;
+    height: 60px;
+    transition: none;
+  }
+  #nav nav ul {
+    position: absolute;
+    background: none;
+    backdrop-filter: none;
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    transition: inherit;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 32px 0 0;
+    margin: 0;
+  }
+  #nav nav ul li {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    margin-right: 5vw;
+  }
+  #nav nav .logo {
+    display: flex;
+    align-items: center;
+  }
+  #nav nav .logo,
+  #nav nav ul a {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    height: 100%;
+    /* width: 16rem; */
+    width: auto;
+  }
+  #nav nav ul a {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  #nav a:hover {
+    letter-spacing: .35em;
+  }
+  .sections section#hero .logo-container h1 {
+    width: 100%;
+    padding: 62px 0 0 0;
+    margin: 0;
+    text-align: center;
+  }
+  .sections section#hero .logo-container h3 {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.6em;
+    padding: 8px 0 0 0;
+    margin: 0;
+  }
+  .sections section#hero .logo-container .moon {
+    width: 19.2rem;
+    height: 19.2rem;
+  }
 }

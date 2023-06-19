@@ -20,17 +20,18 @@ export default function Index() {
                       height={138}
                       alt="Angelo Hague Moon Logo"
                     />
-                    <h1>Angelo Hague</h1>
-                    <h3>Web Developer</h3>
-                    
-                    <Image
-                      className='moon'
-                      priority
-                      src={moon}
-                      width={138}
-                      height={138}
-                      alt="Angelo Hague Moon Logo"
-                    />
+                    <div>
+                        <h1>Angelo Hague</h1>
+                        <h3>Web Developer</h3>
+                        <Image
+                        className='moon'
+                        priority
+                        src={moon}
+                        width={138}
+                        height={138}
+                        alt="Angelo Hague Moon Logo"
+                        />
+                    </div>
                 </div>
                 <div className="dive_deeper">
                     <a href={'#'+sectionMetadata[0]}>
