@@ -3,22 +3,9 @@ import Image from 'next/image'
 import moon from '@/assets/Moon.svg'
 import shimmer1 from '@/assets/Shimmer1.svg'
 import shimmer2 from '@/assets/Shimmer2.svg'
-// import { getSortedSectionsData } from '@/lib/home_sections'
-import { getSortedPostsData } from '@/lib/posts';
-import Blog from '@/components/Blog';
+import HomeSections from '@/components/HomeSections'
 
-// export async function getStaticProps() {
-//     const allPostsData = getSortedPostsData();
-//     return {
-//       props: {
-//         allPostsData,
-//       },
-//     };
-//   }
-
-
-export default function Index({ allPostsData }) {
-    console.log(allPostsData)
+export default function Index() {
   return (
     <main>
       <div className="sections">
@@ -57,8 +44,8 @@ export default function Index({ allPostsData }) {
                     </a>
                 </div>
             </section>
-            <Blog />
-            <section id="who-i-am">
+            <HomeSections />
+            {/* <section id="who-i-am">
                 <div className="container">
                     <h2>Who I am</h2>
                     <p>
@@ -99,7 +86,7 @@ export default function Index({ allPostsData }) {
                     </p>
                     <button>Get in touch</button>
                 </div>
-            </section>
+            </section> */}
             <div className="page_nav">
                 <div>
                     <label for=""></label>

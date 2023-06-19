@@ -15,7 +15,7 @@ export default function NavBar() {
             <div class="nav_bar"></div>
             <input type="checkbox" id="side_menu_checkbox" />
             <label id="hamburger" for="side_menu_checkbox">
-                <a tabindex="0"><span /></a>
+                <a><span /></a>
             </label>
             <nav>
                 <ul>
