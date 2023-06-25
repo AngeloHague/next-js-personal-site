@@ -1,3 +1,7 @@
-export default function FirstPost() {
-    return <h1>Projects</h1>;
+export default function ProjectsPage() {
+    return (
+      <main className="page">
+        <h1>Projects</h1>
+      </main>
+    );
   }
