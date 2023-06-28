@@ -7,6 +7,7 @@ import shimmer2 from '@/assets/Shimmer2.svg'
 
 export default function HeroSection({home=false, show_moon=false, btn_text='Dive Deeper', btn_link, subtitle}) {
     const title = (home) ? <h1>Angelo Hague</h1> : '';
+    const homeClass =  (home) ? "home" : '';
     const moon_el = (show_moon || home) ? 
     <Image
         className='moon'
@@ -17,7 +18,7 @@ export default function HeroSection({home=false, show_moon=false, btn_text='Dive
         alt="Angelo Hague Moon Logo"
     /> : '';
     return (
-        <section className="home" id="hero">
+        <section className={homeClass} id="hero">
                 <div className="logo-container">
                     <Image
                       className='stars'
