@@ -1,5 +1,6 @@
-import HomeSections, { HomeSectionSideNav, sectionMetadata } from '@/components/HomeSections'
+import HomeSections, { sectionMetadata } from '@/components/HomeSections'
 import HeroSection from '@/components/HeroSection'
+import { SideNav } from '@/components/SideNav'
 
 export default function Index() {
   return (
@@ -10,7 +11,7 @@ export default function Index() {
             btn_link={'#'+sectionMetadata[0]}
             subtitle='Web Developer' />
           <HomeSections />
-          <HomeSectionSideNav />
+          <SideNav slugs={sectionMetadata} />
       </div>
     </main>
   )
