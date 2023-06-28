@@ -1,0 +1,22 @@
+{
+    "this-website": {
+        "title": "This Website",
+        "description": "A personal portfolio, crafted with Next.js.",
+        "type": "next.js"
+    },
+    "zebra-menswear": {
+        "title": "Zebra Menswear",
+        "description": "A custom Shopify Liquid template, created from scratch.",
+        "type": "shopify"
+    },
+    "iou-poker": {
+        "title": "IOU Poker",
+        "description": "A full stack poker app created with React Native and Colyseus.js.",
+        "type": "react"
+    },
+    "cb-beauty": {
+        "title": "CB Beauty",
+        "description": "A static website, made with with HTML, CSS and JavaScript.",
+        "type": "html"
+    }
+}
