@@ -44,7 +44,7 @@ function ProjectPreview({id}) {
 export default function ProjectSections({projectMetadata}) {
     const sections = Object.keys(projectMetadata).map((section) => {
         return (
-        <section className='project' id={section}>
+        <section className={styles.project} id={section}>
             <h2>{projectMetadata[section].title}</h2>
             <p>{projectMetadata[section].description}</p>
             <ProjectPreview id={section} />

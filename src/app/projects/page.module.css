@@ -1,3 +1,8 @@
+section.project h3 a {
+    font-size: 1.8rem;
+    padding: 8px;
+    box-sizing: border-box;
+}
 .preview {
     width: 100%;
     aspect-ratio: 333/236;
