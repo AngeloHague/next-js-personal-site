@@ -8,8 +8,6 @@ html, body {
   background: #0D0620;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
   min-width: 280px;
   width: 100vw;
   /* overflow-x: hidden; */
@@ -184,6 +182,13 @@ a:hover {
   height: auto;
 }
 
+.sections {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
 .sections section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -207,6 +212,7 @@ a:hover {
 }
 
 .sections section#hero .logo-container {
+  position: relative;
   background: linear-gradient(180deg, #270039 0%, #231A5B 100%);
   /* max-width: 81.6rem; */
   width: 100%;
@@ -231,7 +237,7 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60%;
+  height: 100%;
   object-fit: cover;
   transition: all 0.4s;
 }
@@ -385,6 +391,7 @@ p {
 
 .sections section::last-of-type {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 @media (min-width: 480px) {
