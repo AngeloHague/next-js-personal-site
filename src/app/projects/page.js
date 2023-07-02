@@ -15,6 +15,7 @@ export default function ProjectsPage() {
         <div className="sections">
           <HeroSection
             subtitle='Select a star'
+            btn_text='Or read below'
             btn_link={'#' + Object.keys(projectMetadata)[0]}
           />
           <ProjectSections projectMetadata={projectMetadata} />
