@@ -8,6 +8,7 @@ export const metadata = {
   description: 'An interactive map of my recent projects. Scroll down to view them in a grid instead.',
 }
 
+
 export default function ProjectsPage() {
   const projectMetadata = getProjectMetadata();
     return (

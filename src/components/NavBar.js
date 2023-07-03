@@ -1,12 +1,6 @@
-'use client'
-
 import React from 'react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
-export default function NavBar() {
-    
-    const pathname = usePathname().split('/')[1]
+function NavBar({ pathname }) {
 
     var links = [
         ['Home','/'],
@@ -25,9 +19,11 @@ export default function NavBar() {
             <nav>
                 <div className="logo"><span>Angelo Hague</span> / {pathname}</div>
                 <ul>
-                    {links.map(link => (<li><a href={link[1]} tabIndex='1'>{link[0]}</a></li>))}
+                    {links.map((link, idx) => (<li key={idx}><a href={link[1]} tabIndex='1'>{link[0]}</a></li>))}
                 </ul>
             </nav>
         </header>
     )
 }
+
+export default NavBar;
