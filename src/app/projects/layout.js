@@ -1,7 +1,5 @@
-import { Quicksand } from 'next/font/google'
 import NavBar from '@/components/NavBar'
-
-const quicksand = Quicksand({ subsets: ['latin'] })
+import { quicksand } from '@/lib/fonts'
 
 export default function Layout({ children }) {
   return (
