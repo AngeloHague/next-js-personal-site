@@ -311,7 +311,7 @@ a:hover {
 
 .page_nav div {
   background-color: #fff;
-  height: clamp(192px, 35%, 320px);
+  /* height: clamp(192px, 35%, 320px); */
   width: 24px;
   margin: auto;
   margin-left: 12px;
@@ -323,6 +323,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   border-radius: 16px;
+  gap: 24px;
 }
 
 .page_nav div a {
