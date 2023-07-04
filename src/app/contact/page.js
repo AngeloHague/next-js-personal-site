@@ -1,7 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import { SideNav } from "@/components/SideNav";
-import styles from './page.module.css'
-import { quicksand } from "@/lib/fonts";
+import ContactForm from "./ContactForm";
 
 export const metadata = {
   title: 'Contact | Angelo Hague',
@@ -19,18 +18,9 @@ export default function ContactPage() {
             btn_link={'#form'}
           />
           <SideNav slugs={['#form']} />
-          <section>
+          <section id='form'>
             <h2>Contact Form</h2>
-            <form className={styles.contact} name="contact" id='form' method="POST" data-netlify="true">
-                <label>Your Name: <input className={quicksand.className} type="text" name="name" /></label>
-                <label>Your Email: <input className={quicksand.className} type="email" name="email" /></label>
-                <label>Your Role: <select className={quicksand.className} name="role[]">
-                  <option value="Customer">Customer</option>
-                  <option value="Employer">Employer</option>
-                </select></label>
-                <label>Message: <textarea className={quicksand.className} name="message"></textarea></label>
-                <button type="submit">Send</button>
-            </form>
+            <ContactForm />
           </section>
       </div>
       </main>
