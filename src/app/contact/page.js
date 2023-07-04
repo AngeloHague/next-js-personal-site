@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import { SideNav } from "@/components/SideNav";
 import ContactForm from "./ContactForm";
+import ContactLinks from "./ContactLinks";
 
 export const metadata = {
   title: 'Contact | Angelo Hague',
@@ -16,7 +17,9 @@ export default function ContactPage() {
             subtitle='Find me on'
             btn_text='Or use this form'
             btn_link={'#form'}
-          />
+          >
+            <ContactLinks />
+          </HeroSection>
           <SideNav slugs={['#form']} />
           <section id='form'>
             <h2>Contact Form</h2>

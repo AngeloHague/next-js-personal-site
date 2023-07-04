@@ -7,7 +7,7 @@ import shimmer1 from '@/assets/Shimmer1.svg'
 import shimmer2 from '@/assets/Shimmer2.svg'
 import { handleScroll } from "@/lib/scrolling";
 
-export default function HeroSection({home=false, show_moon=false, btn_text='Dive Deeper', btn_link, subtitle}) {
+export default function HeroSection({home=false, show_moon=false, btn_text='Dive Deeper', btn_link, subtitle, children}) {
     const title = (home) ? <h1>Angelo Hague</h1> : '';
     const homeClass =  (home) ? "home" : '';
     const moon_el = (show_moon || home) ? 
@@ -34,6 +34,7 @@ export default function HeroSection({home=false, show_moon=false, btn_text='Dive
                         {title}
                         <h3>{subtitle}</h3>
                         {moon_el}
+                        {children}
                     </div>
                 </div>
                 <div className="dive_deeper">
