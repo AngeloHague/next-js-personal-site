@@ -8,7 +8,7 @@ export function SideNav({slugs}) {
         </>
     ));
     return (
-        <div className="page_nav">
+        <div id="page_nav">
             <div>
                 <a className='anchorTag' href="#hero" onClick={handleScroll} tabIndex='-1'><span /></a>
                 {nav}
