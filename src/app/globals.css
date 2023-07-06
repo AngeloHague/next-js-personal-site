@@ -1,5 +1,6 @@
 :root {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 html, body {
@@ -179,7 +180,6 @@ a:hover {
 }
 
 .sections {
-  scroll-behavior: smooth;
   /* scroll-snap-type: y proximity; */
   height: 100vh;
   /* overflow-y: scroll; */
