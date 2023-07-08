@@ -1,7 +1,17 @@
+import HeroSection from "@/components/HeroSection";
+import { SideNav } from "@/components/SideNav";
+
 export default function AboutPage() {
     return (
-      <main className="page">
-        <h1>About me</h1>
+      <main>
+        <div className="sections">
+          <HeroSection
+            subtitle='Origin: Earth'
+            btn_text='Or use this form'
+            btn_link={'#form'}
+          />
+          <SideNav slugs={[]} />
+          </div>
       </main>
     );
   }
