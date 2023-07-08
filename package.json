@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "framer-motion": "^10.12.18",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.2.1",
     "next": "13.4.5",
