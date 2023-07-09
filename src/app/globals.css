@@ -272,6 +272,7 @@ a:hover {
 }
 .sections section#hero .dive_deeper h3 {
   position: relative;
+  margin-top: -64px;
   padding: 7px 0 9px 0;
 }
 
