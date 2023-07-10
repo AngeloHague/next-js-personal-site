@@ -156,6 +156,15 @@ a:hover {
   letter-spacing: .5em;
 }
 
+small {
+  font-size: 1.2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+}
+
 #side_menu_checkbox:checked ~ nav,
 #nav nav:focus-within {
   display: block;
@@ -176,7 +185,7 @@ a:hover {
 }
 
 .sections {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .sections section {
