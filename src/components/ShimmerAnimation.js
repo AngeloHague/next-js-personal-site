@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 function shimmerSvg(paths, dur) {
     return <motion.path
+                d={paths[0]}
                 // className='st0'
                 animate={{ d: paths
                 }}
