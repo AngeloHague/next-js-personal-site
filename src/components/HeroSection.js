@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Image from 'next/image'
 import moon from '@/assets/Moon.svg'
@@ -6,10 +5,7 @@ import stars from '@/assets/Stars.svg'
 // import shimmer1 from '@/assets/Shimmer1.svg'
 // import shimmer2 from '@/assets/Shimmer2.svg'
 import { handleScroll } from "@/lib/scrolling";
-import { createAnimationFromSvgFolder } from '@/lib/svg_animation';
 import ShimmerAnimation from './ShimmerAnimation';
-
-const animation = createAnimationFromSvgFolder('shimmer');
 
 export default function HeroSection({home=false, show_moon=false, btn_text='Dive Deeper', btn_link, subtitle, children}) {
   'use client'
