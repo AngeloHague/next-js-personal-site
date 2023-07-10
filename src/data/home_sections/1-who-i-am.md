@@ -2,9 +2,11 @@
 title: 'Who I am'
 ---
 ## Who I am
-I am an aspiring **web developer** and **Computer Science Graduate**.
+I am an aspiring **web developer** and **University of Lincoln Computer Science Graduate**.
 
-I have experience gained **valuable experience** working with a variety of different programming languages.
+Throughout my studies, I have gained **valuable experience** working with a variety of different programming languages.
+
+With these skills, I have worked with clients to develop web applications.
 
 I am **available for commision** in Web Development and also **looking for full-time work**.
 

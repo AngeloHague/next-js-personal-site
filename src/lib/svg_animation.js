@@ -119,6 +119,9 @@ export function createAnimationFromSvgFolder(name) {
     }
     storeAnimation(animation);
     console.log(animation);
+    objects.forEach(obj => {
+        console.log(obj);
+    })
     return animation;
 }
 
