@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.svg_hamburg{fill:none;}
+	.Menu_x0020_Items{fill:none;}
+	.svg_image{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g id="XMLID_134_">
+	<path id="XMLID_2_" class="st0" d="M501.3,613.2H277.1c-6.6,0-12-5.4-12-12V198.8c0-6.6,5.4-12,12-12h224.2c6.6,0,12,5.4,12,12
+		v402.3C513.3,607.8,507.9,613.2,501.3,613.2z"/>
+	<g id="Hamburger">
+		<line id="XMLID_4_" class="st1" x1="494" y1="207" x2="473" y2="207"/>
+		<line id="XMLID_5_" class="st1" x1="494" y1="213" x2="473" y2="213"/>
+		<line id="XMLID_6_" class="st1" x1="494" y1="220" x2="473" y2="220"/>
+	</g>
+	<g id="Text">
+		<line id="XMLID_33_" class="st2" x1="389" y1="376" x2="307" y2="376"/>
+		<line id="XMLID_9_" class="st2" x1="472" y1="376" x2="389" y2="376"/>
+		<line id="XMLID_32_" class="st2" x1="389" y1="400" x2="307" y2="400"/>
+		<line id="XMLID_17_" class="st2" x1="472" y1="400" x2="389" y2="400"/>
+		<line id="XMLID_31_" class="st2" x1="389" y1="426" x2="307" y2="426"/>
+		<line id="XMLID_16_" class="st2" x1="472" y1="426" x2="389" y2="426"/>
+		<line id="XMLID_30_" class="st2" x1="389" y1="450" x2="307" y2="450"/>
+		<line id="XMLID_15_" class="st2" x1="472" y1="450" x2="389" y2="450"/>
+		<line id="XMLID_29_" class="st2" x1="389" y1="474" x2="307" y2="474"/>
+		<line id="XMLID_14_" class="st2" x1="472" y1="474" x2="389" y2="474"/>
+		<line id="XMLID_28_" class="st2" x1="389" y1="500" x2="307" y2="500"/>
+		<line id="XMLID_13_" class="st2" x1="472" y1="500" x2="389" y2="500"/>
+		<line id="XMLID_27_" class="st2" x1="389" y1="524" x2="307" y2="524"/>
+		<line id="XMLID_24_" class="st2" x1="472" y1="524" x2="389" y2="524"/>
+		<line id="XMLID_26_" class="st2" x1="389" y1="548" x2="307" y2="548"/>
+		<line id="XMLID_25_" class="st2" x1="472" y1="548" x2="389" y2="548"/>
+	</g>
+	<path id="XMLID_3_" class="svg_image" d="M422.2,337.8h-66c-6.6,0-12-5.4-12-12v-66c0-6.6,5.4-12,12-12h66c6.6,0,12,5.4,12,12v66
+		C434.2,332.4,428.8,337.8,422.2,337.8z"/>
+	<g id="XMLID_18_">
+		<polyline id="XMLID_19_" class="st0" points="501.5,389.9 492.6,398.9 501.7,408.1 		"/>
+		<polyline id="XMLID_20_" class="st0" points="525.6,408.1 534.6,399.1 525.4,389.9 		"/>
+		<line id="XMLID_21_" class="st0" x1="493" y1="399" x2="535" y2="399"/>
+	</g>
+</g>
+<g id="Menu_3_">
+	<line id="XMLID_661_" class="st3" x1="281" y1="211" x2="221" y2="211"/>
+	<line id="XMLID_660_" class="st3" x1="387" y1="211" x2="327" y2="211"/>
+	<line id="XMLID_659_" class="st3" x1="485" y1="211" x2="425" y2="211"/>
+	<line id="XMLID_658_" class="st3" x1="579" y1="211" x2="519" y2="211"/>
+</g>
+</svg>
