@@ -1,0 +1,38 @@
+[
+    {
+        "order": 1,
+        "id": "who",
+        "title": "Who I am",
+        "contents": [
+            {"markdown": "I am an aspiring **web developer** and **University of Lincoln Computer Science Graduate**."},
+            {"animation": "lincoln_cathedral"},
+            {"markdown": "Throughout my studies, I have gained **valuable experience** working with a variety of different programming languages."},
+            {"markdown": "With these skills, I have worked with clients to develop web applications."},
+            {"markdown": "I am **available for commision** in Web Development and also **looking for full-time work**."},
+            {"markdown": "### [Find out more](/about)"}
+        ]
+    },
+    {
+        "order": 2,
+        "id": "what",
+        "title": "What I have done",
+        "contents": [
+            {"markdown": "Most recently, I developed **this website using Next.js**."},
+            {"animation": "lincoln_cathedral"},
+            {"markdown": "I have also **worked with multiple clients** to produce other **responsive websites**."},
+            {"markdown": "I have developed **dynamic e-commerce templates** using Shopify, **static sites**, as well as a **full-stack React Poker application**."},
+            {"markdown": "### [View my work](/projects)"}
+        ]
+    },
+    {
+        "order": 3,
+        "id": "how",
+        "title": "How I can help",
+        "contents": [
+            {"markdown": "With **years of study** and experience with **agile methodologies**, I am an excellent candidate to help craft you the perfect site or application."},
+            {"animation": "lincoln_cathedral"},
+            {"markdown": "Get in touch, and we can discuss and assess your needs and progress from there!"},
+            {"markdown": "### [Get in touch](/contact)"}
+        ]
+    }
+]
