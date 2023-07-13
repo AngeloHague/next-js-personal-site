@@ -100,7 +100,6 @@ export default function KeyframeAnimation({json, width=800, height=800}) {
     let durations, paths, polylines, lines;
     for (let el in json) {
         if (el=='durations') {
-            console.log(json[el].times)
             durations = {
                 animation: json[el].animation,
                 times: json[el].times,
