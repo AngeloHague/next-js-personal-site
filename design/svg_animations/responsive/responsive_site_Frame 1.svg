@@ -20,16 +20,16 @@
 		<line id="XMLID_6_" class="st1" x1="494" y1="220" x2="473" y2="220"/>
 	</g>
 	<g id="Text">
-		<line id="XMLID_33_" class="st2" x1="389" y1="376" x2="307" y2="376"/>
-		<line id="XMLID_9_" class="st2" x1="472" y1="376" x2="389" y2="376"/>
-		<line id="XMLID_32_" class="st2" x1="389" y1="400" x2="307" y2="400"/>
-		<line id="XMLID_17_" class="st2" x1="472" y1="400" x2="389" y2="400"/>
-		<line id="XMLID_31_" class="st2" x1="389" y1="426" x2="307" y2="426"/>
-		<line id="XMLID_16_" class="st2" x1="472" y1="426" x2="389" y2="426"/>
-		<line id="XMLID_30_" class="st2" x1="389" y1="450" x2="307" y2="450"/>
-		<line id="XMLID_15_" class="st2" x1="472" y1="450" x2="389" y2="450"/>
-		<line id="XMLID_29_" class="st2" x1="389" y1="474" x2="307" y2="474"/>
-		<line id="XMLID_14_" class="st2" x1="472" y1="474" x2="389" y2="474"/>
+		<line id="XMLID_33_" class="st2" x1="472" y1="376" x2="307" y2="376"/>
+		<line id="XMLID_9_" class="st2" x1="472" y1="376" x2="462" y2="376"/>
+		<line id="XMLID_32_" class="st2" x1="472" y1="400" x2="307" y2="400"/>
+		<line id="XMLID_17_" class="st2" x1="472" y1="376" x2="462" y2="376"/>
+		<line id="XMLID_31_" class="st2" x1="472" y1="426" x2="307" y2="426"/>
+		<line id="XMLID_16_" class="st2" x1="472" y1="376" x2="462" y2="376"/>
+		<line id="XMLID_30_" class="st2" x1="472" y1="450" x2="307" y2="450"/>
+		<line id="XMLID_15_" class="st2" x1="472" y1="376" x2="462" y2="376"/>
+		<line id="XMLID_29_" class="st2" x1="472" y1="474" x2="307" y2="474"/>
+		<line id="XMLID_14_" class="st2" x1="472" y1="376" x2="462" y2="376"/>
 		<polyline id="XMLID_13_" class="st2" points="472,500 389,500 307,500 		"/>
 		<polyline id="XMLID_24_" class="st2" points="472,524 389,524 307,524 		"/>
 		<polyline id="XMLID_25_" class="st2" points="472,548 389,548 307,548 		"/>

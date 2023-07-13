@@ -21,15 +21,15 @@
 	</g>
 	<g id="Text_1_">
 		<line id="XMLID_88_" class="st2" x1="570" y1="376" x2="207" y2="376"/>
-		<line id="XMLID_87_" class="st2" x1="571" y1="376" x2="338" y2="376"/>
+		<line id="XMLID_87_" class="st2" x1="571" y1="376" x2="561" y2="376"/>
 		<line id="XMLID_86_" class="st2" x1="570" y1="400" x2="207" y2="400"/>
-		<line id="XMLID_85_" class="st2" x1="571" y1="400" x2="338" y2="400"/>
+		<line id="XMLID_85_" class="st2" x1="571" y1="376" x2="561" y2="376"/>
 		<line id="XMLID_84_" class="st2" x1="570" y1="426" x2="207" y2="426"/>
-		<line id="XMLID_83_" class="st2" x1="571" y1="426" x2="338" y2="426"/>
+		<line id="XMLID_83_" class="st2" x1="571" y1="376" x2="561" y2="376"/>
 		<line id="XMLID_82_" class="st2" x1="570" y1="450" x2="207" y2="450"/>
-		<line id="XMLID_81_" class="st2" x1="571" y1="450" x2="338" y2="450"/>
+		<line id="XMLID_81_" class="st2" x1="571" y1="376" x2="561" y2="376"/>
 		<line id="XMLID_80_" class="st2" x1="570" y1="474" x2="207" y2="474"/>
-		<line id="XMLID_79_" class="st2" x1="571" y1="474" x2="338" y2="474"/>
+		<line id="XMLID_79_" class="st2" x1="571" y1="376" x2="561" y2="376"/>
 		<polyline id="XMLID_77_" class="st2" points="570,500 387,500 207,500 		"/>
 		<polyline id="XMLID_75_" class="st2" points="570,524 387,524 207,524 		"/>
 		<polyline id="XMLID_73_" class="st2" points="570,548 387,548 207,548 		"/>
@@ -43,9 +43,9 @@
 	</g>
 </g>
 <g id="Menu_2_">
-	<line id="XMLID_576_" class="st3" x1="281" y1="211" x2="221" y2="211"/>
-	<line id="XMLID_575_" class="st3" x1="387" y1="211" x2="327" y2="211"/>
-	<line id="XMLID_574_" class="st3" x1="485" y1="211" x2="425" y2="211"/>
-	<line id="XMLID_573_" class="st3" x1="579" y1="211" x2="519" y2="211"/>
+	<line id="XMLID_576_" class="st3" x1="1092" y1="211" x2="1032" y2="211"/>
+	<line id="XMLID_575_" class="st3" x1="1198" y1="211" x2="1138" y2="211"/>
+	<line id="XMLID_574_" class="st3" x1="1296" y1="211" x2="1236" y2="211"/>
+	<line id="XMLID_573_" class="st3" x1="1390" y1="211" x2="1330" y2="211"/>
 </g>
 </svg>
