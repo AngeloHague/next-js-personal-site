@@ -25,9 +25,9 @@
 		<line id="XMLID_86_" class="st2" x1="570" y1="400" x2="207" y2="400"/>
 		<line id="XMLID_85_" class="fade_x0020_menu" x1="571" y1="304" x2="561" y2="304"/>
 		<line id="XMLID_84_" class="st2" x1="570" y1="426" x2="207" y2="426"/>
-		<line id="XMLID_83_" class="fade_x0020_menu" x1="571" y1="328" x2="561" y2="328"/>
+		<line id="XMLID_83_" class="fade_x0020_menu" x1="571" y1="254" x2="561" y2="254"/>
 		<line id="XMLID_82_" class="st2" x1="570" y1="450" x2="207" y2="450"/>
-		<line id="XMLID_81_" class="fade_x0020_menu" x1="571" y1="254" x2="561" y2="254"/>
+		<line id="XMLID_81_" class="fade_x0020_menu" x1="571" y1="328" x2="561" y2="328"/>
 		<line id="XMLID_80_" class="st2" x1="570" y1="474" x2="207" y2="474"/>
 		<line id="XMLID_79_" class="fade_x0020_menu" x1="571" y1="353" x2="561" y2="353"/>
 		<polyline id="XMLID_77_" class="st2" points="570,500 387,500 207,500 		"/>
