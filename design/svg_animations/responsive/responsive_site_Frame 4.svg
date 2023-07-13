@@ -15,9 +15,9 @@
 	<path id="XMLID_467_" class="st0" d="M650.1,613.2H129c-6.6,0-12-5.4-12-12V198.8c0-6.6,5.4-12,12-12h521.2c6.6,0,12,5.4,12,12
 		v402.3C662.1,607.8,656.7,613.2,650.1,613.2z"/>
 	<g id="Hamburger_3_">
-		<line id="XMLID_466_" class="st1" x1="642" y1="207" x2="621" y2="207"/>
-		<line id="XMLID_465_" class="st1" x1="642" y1="213" x2="621" y2="213"/>
-		<line id="XMLID_464_" class="st1" x1="642" y1="220" x2="621" y2="220"/>
+		<line id="XMLID_466_" class="fade_x0020_menu" x1="642" y1="207" x2="621" y2="207"/>
+		<line id="XMLID_465_" class="fade_x0020_menu" x1="642" y1="213" x2="621" y2="213"/>
+		<line id="XMLID_464_" class="fade_x0020_menu" x1="642" y1="220" x2="621" y2="220"/>
 	</g>
 	<g id="Text_3_">
 		<line id="XMLID_462_" class="st2" x1="570" y1="376" x2="207" y2="376"/>
@@ -45,17 +45,11 @@
 	</g>
 </g>
 <g id="Menu">
-	<g id="XMLID_28_">
-		<line id="XMLID_32_" class="st3" x1="281" y1="211" x2="221" y2="211"/>
-		<line id="XMLID_31_" class="st3" x1="387" y1="211" x2="327" y2="211"/>
-		<line id="XMLID_30_" class="st3" x1="485" y1="211" x2="425" y2="211"/>
-		<line id="XMLID_29_" class="st3" x1="579" y1="211" x2="519" y2="211"/>
-	</g>
 	<g id="XMLID_23_">
-		<line id="XMLID_27_" class="fade_x0020_menu" x1="281" y1="211" x2="221" y2="211"/>
-		<line id="XMLID_26_" class="fade_x0020_menu" x1="387" y1="211" x2="327" y2="211"/>
-		<line id="XMLID_25_" class="fade_x0020_menu" x1="485" y1="211" x2="425" y2="211"/>
-		<line id="XMLID_24_" class="fade_x0020_menu" x1="579" y1="211" x2="519" y2="211"/>
+		<line id="XMLID_49_" class="fadein_x0020_menu" x1="207" y1="211" x2="267" y2="211"/>
+		<line id="XMLID_48_" class="fadein_x0020_menu" x1="315" y1="211" x2="375" y2="211"/>
+		<line id="XMLID_47_" class="fadein_x0020_menu" x1="413" y1="211" x2="473" y2="211"/>
+		<line id="XMLID_46_" class="fadein_x0020_menu" x1="510" y1="211" x2="570" y2="211"/>
 	</g>
 </g>
 </svg>
