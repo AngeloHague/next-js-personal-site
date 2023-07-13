@@ -2,31 +2,18 @@
 import { getSection, getSectionMetadata } from '@/lib/home_sections';
 import Markdown from 'markdown-to-jsx';
 import React from 'react'
+import LineArt from './LineArt';
 
 export const sectionMetadata = getSectionMetadata();
 
-export function HomeSectionSideNav() {
-    const nav = sectionMetadata.map((slug) => (
-        <>
-            <a href={"#"+slug} tabIndex='-1'><span /></a>
-        </>
-    ));
-    return (
-        <div className="page_nav">
-            <div>
-                <a href="#hero" tabIndex='-1'><span /></a>
-                {nav}
-            </div>
-        </div>
-    )
-}
-
-export default function HomeSections()
+export default function HomeSections({svg})
 {
     // const sectionMetadata = getSectionMetadata();
     const sections = sectionMetadata.map(async(slug) => (
-        <section id={slug}>
+        <section id={slug} className='home_section'>
             <div className="content"><Markdown>{getSection(slug)}</Markdown></div>
+            {/* <Image src={CathedralSVG} width='800' height='800' /> */}
+            <LineArt svg={svg} />
         </section>
     ));
     return <>{sections}</>;
