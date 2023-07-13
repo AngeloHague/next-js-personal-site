@@ -30,12 +30,9 @@
 		<line id="XMLID_247_" class="st2" x1="570" y1="327" x2="337" y2="327"/>
 		<line id="XMLID_246_" class="st2" x1="570" y1="474" x2="207" y2="474"/>
 		<line id="XMLID_245_" class="st2" x1="570" y1="351" x2="337" y2="351"/>
-		<line id="XMLID_244_" class="st2" x1="387" y1="500" x2="207" y2="500"/>
-		<line id="XMLID_243_" class="st2" x1="570" y1="500" x2="387" y2="500"/>
-		<line id="XMLID_242_" class="st2" x1="387" y1="524" x2="207" y2="524"/>
-		<line id="XMLID_241_" class="st2" x1="570" y1="524" x2="387" y2="524"/>
-		<line id="XMLID_240_" class="st2" x1="387" y1="548" x2="207" y2="548"/>
-		<line id="XMLID_239_" class="st2" x1="570" y1="548" x2="387" y2="548"/>
+		<polyline id="XMLID_243_" class="st2" points="570,500 387,500 207,500 		"/>
+		<polyline id="XMLID_241_" class="st2" points="570,524 387,524 207,524 		"/>
+		<polyline id="XMLID_239_" class="st2" points="570,548 387,548 207,548 		"/>
 	</g>
 	<path id="XMLID_238_" class="svg_image" d="M302.2,354.4h-82.6c-6.6,0-12-5.4-12-12v-82.6c0-6.6,5.4-12,12-12h82.6
 		c6.6,0,12,5.4,12,12v82.6C314.2,349,308.8,354.4,302.2,354.4z"/>
