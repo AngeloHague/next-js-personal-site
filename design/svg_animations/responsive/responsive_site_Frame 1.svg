@@ -12,8 +12,8 @@
 	.st3{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
 <g id="XMLID_134_">
-	<path id="XMLID_2_" class="st0" d="M501.4,613.2H277.2c-6.6,0-12-5.4-12-12V198.8c0-6.6,5.4-12,12-12h224.2c6.6,0,12,5.4,12,12
-		v402.3C513.4,607.8,508,613.2,501.4,613.2z"/>
+	<path id="XMLID_2_" class="st0" d="M501.3,613.2H277.1c-6.6,0-12-5.4-12-12V198.8c0-6.6,5.4-12,12-12h224.2c6.6,0,12,5.4,12,12
+		v402.3C513.3,607.8,507.9,613.2,501.3,613.2z"/>
 	<g id="Hamburger">
 		<line id="XMLID_4_" class="st1" x1="494" y1="207" x2="473" y2="207"/>
 		<line id="XMLID_5_" class="st1" x1="494" y1="213" x2="473" y2="213"/>
@@ -21,21 +21,23 @@
 	</g>
 	<g id="Text">
 		<line id="XMLID_33_" class="st2" x1="472" y1="376" x2="307" y2="376"/>
-		<line id="XMLID_9_" class="fade_x0020_menu" x1="472" y1="280" x2="462" y2="280"/>
+		<g id="XMLID_7_">
+			<line id="XMLID_16_" class="fade_x0020_menu" x1="472" y1="254" x2="462" y2="254"/>
+			<line id="XMLID_9_" class="fade_x0020_menu" x1="472" y1="280" x2="462" y2="280"/>
+			<line id="XMLID_17_" class="fade_x0020_menu" x1="472" y1="304" x2="462" y2="304"/>
+			<line id="XMLID_15_" class="fade_x0020_menu" x1="472" y1="328" x2="462" y2="328"/>
+			<line id="XMLID_14_" class="fade_x0020_menu" x1="472" y1="353" x2="462" y2="353"/>
+		</g>
 		<line id="XMLID_32_" class="st2" x1="472" y1="400" x2="307" y2="400"/>
-		<line id="XMLID_17_" class="fade_x0020_menu" x1="472" y1="304" x2="462" y2="304"/>
 		<line id="XMLID_31_" class="st2" x1="472" y1="426" x2="307" y2="426"/>
-		<line id="XMLID_16_" class="fade_x0020_menu" x1="472" y1="254" x2="462" y2="254"/>
 		<line id="XMLID_30_" class="st2" x1="472" y1="450" x2="307" y2="450"/>
-		<line id="XMLID_15_" class="fade_x0020_menu" x1="472" y1="328" x2="462" y2="328"/>
 		<line id="XMLID_29_" class="st2" x1="472" y1="474" x2="307" y2="474"/>
-		<line id="XMLID_14_" class="fade_x0020_menu" x1="472" y1="353" x2="462" y2="353"/>
 		<polyline id="XMLID_13_" class="st2" points="472,500 389,500 307,500 		"/>
 		<polyline id="XMLID_24_" class="st2" points="472,524 389,524 307,524 		"/>
 		<polyline id="XMLID_25_" class="st2" points="472,548 389,548 307,548 		"/>
 	</g>
-	<path id="XMLID_3_" class="svg_image" d="M422.3,337.8h-66c-6.6,0-12-5.4-12-12v-66c0-6.6,5.4-12,12-12h66c6.6,0,12,5.4,12,12v66
-		C434.3,332.4,428.9,337.8,422.3,337.8z"/>
+	<path id="XMLID_3_" class="svg_image" d="M422.2,337.8h-66c-6.6,0-12-5.4-12-12v-66c0-6.6,5.4-12,12-12h66c6.6,0,12,5.4,12,12v66
+		C434.2,332.4,428.8,337.8,422.2,337.8z"/>
 	<g id="XMLID_18_">
 		<polyline id="XMLID_19_" class="st0" points="501.5,389.9 492.6,398.9 501.7,408.1 		"/>
 		<polyline id="XMLID_20_" class="st0" points="525.6,408.1 534.6,399.1 525.4,389.9 		"/>
@@ -43,17 +45,17 @@
 	</g>
 </g>
 <g id="Menu_3_">
-	<g id="XMLID_49_">
-		<line id="XMLID_53_" class="st3" x1="276" y1="211" x2="216" y2="211"/>
-		<line id="XMLID_52_" class="st3" x1="382" y1="211" x2="322" y2="211"/>
-		<line id="XMLID_51_" class="st3" x1="480" y1="211" x2="420" y2="211"/>
-		<line id="XMLID_50_" class="st3" x1="574" y1="211" x2="514" y2="211"/>
+	<g id="XMLID_50_">
+		<line id="XMLID_54_" class="st3" x1="281" y1="211" x2="221" y2="211"/>
+		<line id="XMLID_53_" class="st3" x1="387" y1="211" x2="327" y2="211"/>
+		<line id="XMLID_52_" class="st3" x1="485" y1="211" x2="425" y2="211"/>
+		<line id="XMLID_51_" class="st3" x1="579" y1="211" x2="519" y2="211"/>
 	</g>
-	<g id="XMLID_44_">
-		<line id="XMLID_48_" class="fade_x0020_menu" x1="276" y1="211" x2="216" y2="211"/>
-		<line id="XMLID_47_" class="fade_x0020_menu" x1="382" y1="211" x2="322" y2="211"/>
-		<line id="XMLID_46_" class="fade_x0020_menu" x1="480" y1="211" x2="420" y2="211"/>
-		<line id="XMLID_45_" class="fade_x0020_menu" x1="574" y1="211" x2="514" y2="211"/>
+	<g id="XMLID_45_">
+		<line id="XMLID_49_" class="fade_x0020_menu" x1="281" y1="211" x2="221" y2="211"/>
+		<line id="XMLID_48_" class="fade_x0020_menu" x1="387" y1="211" x2="327" y2="211"/>
+		<line id="XMLID_47_" class="fade_x0020_menu" x1="485" y1="211" x2="425" y2="211"/>
+		<line id="XMLID_46_" class="fade_x0020_menu" x1="579" y1="211" x2="519" y2="211"/>
 	</g>
 </g>
 </svg>

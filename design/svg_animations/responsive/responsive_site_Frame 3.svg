@@ -21,15 +21,17 @@
 	</g>
 	<g id="Text_2_">
 		<line id="XMLID_254_" class="st2" x1="570" y1="376" x2="207" y2="376"/>
-		<line id="XMLID_253_" class="fade_x0020_menu" x1="570" y1="304" x2="337" y2="304"/>
+		<g id="XMLID_8_">
+			<line id="XMLID_251_" class="fade_x0020_menu" x1="570" y1="255" x2="337" y2="255"/>
+			<line id="XMLID_249_" class="fade_x0020_menu" x1="570" y1="280" x2="337" y2="280"/>
+			<line id="XMLID_253_" class="fade_x0020_menu" x1="570" y1="304" x2="337" y2="304"/>
+			<line id="XMLID_247_" class="fade_x0020_menu" x1="570" y1="327" x2="337" y2="327"/>
+			<line id="XMLID_245_" class="fade_x0020_menu" x1="570" y1="351" x2="337" y2="351"/>
+		</g>
 		<line id="XMLID_252_" class="st2" x1="570" y1="400" x2="207" y2="400"/>
-		<line id="XMLID_251_" class="fade_x0020_menu" x1="570" y1="255" x2="337" y2="255"/>
 		<line id="XMLID_250_" class="st2" x1="570" y1="426" x2="207" y2="426"/>
-		<line id="XMLID_249_" class="fade_x0020_menu" x1="570" y1="280" x2="337" y2="280"/>
 		<line id="XMLID_248_" class="st2" x1="570" y1="450" x2="207" y2="450"/>
-		<line id="XMLID_247_" class="fade_x0020_menu" x1="570" y1="327" x2="337" y2="327"/>
 		<line id="XMLID_246_" class="st2" x1="570" y1="474" x2="207" y2="474"/>
-		<line id="XMLID_245_" class="fade_x0020_menu" x1="570" y1="351" x2="337" y2="351"/>
 		<polyline id="XMLID_243_" class="st2" points="570,500 387,500 207,500 		"/>
 		<polyline id="XMLID_241_" class="st2" points="570,524 387,524 207,524 		"/>
 		<polyline id="XMLID_239_" class="st2" points="570,548 387,548 207,548 		"/>
@@ -43,17 +45,17 @@
 	</g>
 </g>
 <g id="Menu_1_">
-	<g id="XMLID_27_">
-		<line id="XMLID_31_" class="st3" x1="281" y1="211" x2="221" y2="211"/>
-		<line id="XMLID_30_" class="st3" x1="387" y1="211" x2="327" y2="211"/>
-		<line id="XMLID_29_" class="st3" x1="485" y1="211" x2="425" y2="211"/>
-		<line id="XMLID_28_" class="st3" x1="579" y1="211" x2="519" y2="211"/>
+	<g id="XMLID_28_">
+		<line id="XMLID_32_" class="st3" x1="281" y1="211" x2="221" y2="211"/>
+		<line id="XMLID_31_" class="st3" x1="387" y1="211" x2="327" y2="211"/>
+		<line id="XMLID_30_" class="st3" x1="485" y1="211" x2="425" y2="211"/>
+		<line id="XMLID_29_" class="st3" x1="579" y1="211" x2="519" y2="211"/>
 	</g>
-	<g id="XMLID_22_">
-		<line id="XMLID_26_" class="fade_x0020_menu" x1="281" y1="211" x2="221" y2="211"/>
-		<line id="XMLID_25_" class="fade_x0020_menu" x1="387" y1="211" x2="327" y2="211"/>
-		<line id="XMLID_24_" class="fade_x0020_menu" x1="485" y1="211" x2="425" y2="211"/>
-		<line id="XMLID_23_" class="fade_x0020_menu" x1="579" y1="211" x2="519" y2="211"/>
+	<g id="XMLID_23_">
+		<line id="XMLID_27_" class="fade_x0020_menu" x1="281" y1="211" x2="221" y2="211"/>
+		<line id="XMLID_26_" class="fade_x0020_menu" x1="387" y1="211" x2="327" y2="211"/>
+		<line id="XMLID_25_" class="fade_x0020_menu" x1="485" y1="211" x2="425" y2="211"/>
+		<line id="XMLID_24_" class="fade_x0020_menu" x1="579" y1="211" x2="519" y2="211"/>
 	</g>
 </g>
 </svg>
