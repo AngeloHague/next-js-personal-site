@@ -262,10 +262,6 @@ footer {
   transition: letter-spacing 0.4s;
 }
 
-.st0 {
-  fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
-}
-
 .sections section#hero.home .logo-container h3 {
   letter-spacing: .05em;
 }
@@ -493,24 +489,41 @@ p {
     padding-right: 8px;
   }
 
-  .sections section:nth-child(even) .content {
-    margin: 0;
-    padding-left: 10%;
-    /* float: left; */
-    justify-self: left;
-    margin-right: auto;
+  .sections section .content {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 64px;
+    padding: 64px;
   }
+
+  .sections section .content * { width: 100%; }
 
   .sections section:nth-child(odd) .content {
-    margin: 0;
-    padding-right: 10%;
-    /* float: right; */
-    justify-self: right;
-    margin-left: auto;
+    grid-template-areas: 
+      "animationContainer ."
+      "animationContainer ."
+      "animationContainer ."
+      "animationContainer ."
+      "animationContainer ."
+      "animationContainer ."; 
   }
 
-  .sections section {
-    /* flex-direction: row; */
-    /* justify-content: left; */
+  .sections section:nth-child(even) .content {
+    grid-template-areas: 
+      ". animationContainer"
+      ". animationContainer"
+      ". animationContainer"
+      ". animationContainer"
+      ". animationContainer"
+      ". animationContainer"; 
+  }
+
+  .sections section:nth-child(even) .content * { grid-column: 1; }
+  .sections section:nth-child(odd) .content * { grid-column: 2; }
+
+  .sections section .content .animationContainer {
+    grid-area: animationContainer;
+    align-self: center;
   }
 }
