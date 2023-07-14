@@ -107,7 +107,9 @@ export default function KeyframeAnimation({json, fixedWidth=800, fixedHeight=800
     useEffect(() => {
         const updateContainerSize = () => {
         const containerWidth = containerRef.current.clientWidth;
-        setContainerSize({ width: containerWidth, height: containerWidth });
+        const containerHeight = containerRef.current.clientHeight;
+        const minVal = (containerWidth < containerHeight) ? containerWidth : containerHeight;
+        setContainerSize({ width: minVal, height: minVal });
         };
 
         updateContainerSize();
@@ -165,7 +167,7 @@ export default function KeyframeAnimation({json, fixedWidth=800, fixedHeight=800
             width: '100%',
             aspectRatio: '1/1',
             height: 'auto'
-        }} alt={name+' fallback image (no javascript animation)'} src={'./'+name} />
+        }} alt={name+' fallback image (no javascript animation)'} src={'/'+name+'.svg'} />
             </noscript>
         </motion.div>
     )

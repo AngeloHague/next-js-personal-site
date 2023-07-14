@@ -30,7 +30,7 @@
         "title": "How I can help",
         "contents": [
             {"markdown": "With **years of study** and experience with **agile methodologies**, I am an excellent candidate to help craft you the perfect site or application."},
-            {"animation": "lincoln_cathedral"},
+            {"animation": "responsive_design"},
             {"markdown": "Get in touch, and we can discuss and assess your needs and progress from there!"},
             {"markdown": "### [Get in touch](/contact)"}
         ]
