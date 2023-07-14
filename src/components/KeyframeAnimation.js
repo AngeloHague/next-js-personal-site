@@ -107,8 +107,7 @@ export default function KeyframeAnimation({json, fixedWidth=800, fixedHeight=800
     useEffect(() => {
         const updateContainerSize = () => {
         const containerWidth = containerRef.current.clientWidth;
-        const containerHeight = containerRef.current.clientHeight;
-        setContainerSize({ width: containerWidth, height: containerHeight });
+        setContainerSize({ width: containerWidth, height: containerWidth });
         if (containerWidth > 400) setStrokeWidth(2)
         else setStrokeWidth(4);
         };
