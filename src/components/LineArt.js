@@ -33,7 +33,7 @@ function lincolnCathedralSvg() {
             <motion.polyline variants={draw} id="XMLID_29_" class="st0" points="363,337 363,245 357.3,233.8 353.3,184.4 347.1,233.4 343,238.9 343,244 333,244 
                 331.7,217.2 329.6,244 321,244 318.4,201 316,244 304,244 "/>
             <motion.polyline variants={draw} id="XMLID_28_" class="st0" points="84,234 84,229 85.6,232 89,232 89,219 91.1,221.5 95.4,200.8 98.2,214.4 "/>
-            <motion.line id="XMLID_27_" class="st0" x1="168.3" y1="184.4" x2="193.8" y2="189.2"/>
+            <motion.line variants={draw} id="XMLID_27_" class="st0" x1="168.3" y1="184.4" x2="193.8" y2="189.2"/>
             <motion.polyline variants={draw} id="XMLID_26_" class="st0" points="189,188 189,73 193,37.7 193,31 193,38 195.7,69.9 193,85 193,223 "/>
             <motion.polyline variants={draw} id="XMLID_25_" class="st0" points="196,69.9 200,46.6 200,41 200,47 204.3,71.4 "/>
             <motion.polyline variants={draw} id="XMLID_24_" class="st0" points="236.2,70.8 240,45.9 240,40 240,46 246,86.1 246,234 "/>
