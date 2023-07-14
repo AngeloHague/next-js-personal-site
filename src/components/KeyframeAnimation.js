@@ -1,6 +1,7 @@
 'use client'
 import React, { useLayoutEffect, useRef, useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 function getMotionPaths(paths, durations, strokeWidth) {
     let dur = durations.animation;
@@ -121,6 +122,7 @@ export default function KeyframeAnimation({json, fixedWidth=800, fixedHeight=800
     }, []);
 
     let durations, paths, polylines, lines;
+    let name = json.name;
     for (let el in json) {
         if (el=='durations') {
             durations = {
@@ -152,15 +154,22 @@ export default function KeyframeAnimation({json, fixedWidth=800, fixedHeight=800
         }}
         >
             <motion.svg
-            width={containerSize.width}
-            height={containerSize.height}
-            viewBox={`0 0 ${fixedWidth} ${fixedHeight}`} // Replace fixedWidth and fixedHeight with your desired fixed size
-            preserveAspectRatio="xMidYMid meet"
-            >
-            {paths}
-            {polylines}
-            {lines}
-        </motion.svg>
+                width={containerSize.width}
+                height={containerSize.height}
+                viewBox={`0 0 ${fixedWidth} ${fixedHeight}`} // Replace fixedWidth and fixedHeight with your desired fixed size
+                preserveAspectRatio="xMidYMid meet"
+                >
+                {paths}
+                {polylines}
+                {lines}
+            </motion.svg>
+            <noscript>
+                <Image className='fallback' width='300' height='300' style={{
+            width: '100%',
+            aspectRatio: '1/1',
+            height: 'auto'
+        }} alt={name+' fallback image (no javascript animation)'} src={'./'+name} />
+            </noscript>
         </motion.div>
     )
 }
