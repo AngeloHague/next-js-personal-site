@@ -184,8 +184,10 @@ footer {
   transition: all .4s;
 }
 
-.sections {
-  /* height: 100vh; */
+.home_section .animationContainer {
+  width: 100%;
+  aspect-ratio: 1/1;
+  height: auto;
 }
 
 .sections section {

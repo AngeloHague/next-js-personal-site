@@ -1,8 +1,8 @@
 'use client'
-import React from 'react'
+import React, { useLayoutEffect, useRef, useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 
-function getMotionPaths(paths, durations) {
+function getMotionPaths(paths, durations, strokeWidth) {
     let dur = durations.animation;
     let times = durations.times;
     return paths.map((path) =>
@@ -12,10 +12,12 @@ function getMotionPaths(paths, durations) {
             id={path.id}
             class={path.class}
             d={path.d}
-            animate={{ d: path.d_z }}
+            animate={{
+                d: path.d_z
+            }}
             stroke='white'
             fill='none'
-            strokeWidth='2'
+            strokeWidth={strokeWidth}
             strokeLinecap='round'
             transition={{
                 ease: "easeInOut",
@@ -26,7 +28,7 @@ function getMotionPaths(paths, durations) {
         />
     ))
 }
-function getMotionPolylines(paths, durations) {
+function getMotionPolylines(paths, durations, strokeWidth) {
     let dur = durations.animation;
     let times = durations.times;
     return paths.map((path) =>
@@ -39,7 +41,7 @@ function getMotionPolylines(paths, durations) {
             animate={{ points: path.points_z }}
             stroke='white'
             fill='none'
-            strokeWidth='2'
+            strokeWidth={strokeWidth}
             strokeLinecap='round'
             transition={{
                 ease: "easeInOut",
@@ -50,7 +52,7 @@ function getMotionPolylines(paths, durations) {
         />
     ))
 }
-function getMotionLines(paths, durations) {
+function getMotionLines(paths, durations, strokeWidth) {
     let dur = durations.animation;
     let times = durations.times;
     let fadeInDur = durations.fadein;
@@ -83,7 +85,7 @@ function getMotionLines(paths, durations) {
                 }}
                 stroke='white'
                 fill='none'
-                strokeWidth='2'
+                strokeWidth={strokeWidth}
                 strokeLinecap='round'
                 transition={{
                     ease: "easeInOut",
@@ -96,7 +98,28 @@ function getMotionLines(paths, durations) {
     })
 }
 
-export default function KeyframeAnimation({json, width=800, height=800}) {
+export default function KeyframeAnimation({json, fixedWidth=800, fixedHeight=800}) {
+    const containerRef = useRef(null);
+    const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
+    const [strokeWidth, setStrokeWidth] = useState({strokeWidth: 4});
+
+    useEffect(() => {
+        const updateContainerSize = () => {
+        const containerWidth = containerRef.current.clientWidth;
+        const containerHeight = containerRef.current.clientHeight;
+        setContainerSize({ width: containerWidth, height: containerHeight });
+        if (containerWidth > 400) setStrokeWidth(2)
+        else setStrokeWidth(4);
+        };
+
+        updateContainerSize();
+        window.addEventListener('resize', updateContainerSize);
+
+        return () => {
+        window.removeEventListener('resize', updateContainerSize);
+        };
+    }, []);
+
     let durations, paths, polylines, lines;
     for (let el in json) {
         if (el=='durations') {
@@ -108,20 +131,36 @@ export default function KeyframeAnimation({json, width=800, height=800}) {
             }
         }
         if (el=='paths') {
-            paths = getMotionPaths(json[el], durations)
+            paths = getMotionPaths(json[el], durations, strokeWidth)
         }
         else if (el=='polylines') {
-            polylines = getMotionPolylines(json[el], durations)
+            polylines = getMotionPolylines(json[el], durations, strokeWidth)
         }
         else if (el=='lines') {
-            lines = getMotionLines(json[el], durations)
+            lines = getMotionLines(json[el], durations, strokeWidth)
         }
     }
+
+
+
     return (
-        <motion.svg width={width} height={height}>
+        <motion.div className='animationContainer' ref={containerRef}
+        style={{
+            width: '100%',
+            aspectRatio: '1/1',
+            height: 'auto'
+        }}
+        >
+            <motion.svg
+            width={containerSize.width}
+            height={containerSize.height}
+            viewBox={`0 0 ${fixedWidth} ${fixedHeight}`} // Replace fixedWidth and fixedHeight with your desired fixed size
+            preserveAspectRatio="xMidYMid meet"
+            >
             {paths}
             {polylines}
             {lines}
         </motion.svg>
+        </motion.div>
     )
 }

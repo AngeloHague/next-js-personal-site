@@ -24,6 +24,7 @@ function lincolnCathedralSvg() {
             height={400}
             initial="hidden"
             animate="visible"
+            scale={2}
         >
             <motion.polyline variants={draw} id="XMLID_34_" class="st0" points="45,337 45,225 53.7,171.8 66,225.3 66,235 98,235 98,90 102.1,57.3 102,53.3 102,57.8 
                 109,90.5 109,97 136,97.6 136,89 141,55.2 141,51.2 141,55.2 148,89.1 148,213 "/>
@@ -70,7 +71,7 @@ function lincolnCathedralSvg() {
     )
 }
 
-export default function LineArt({svg}) {
+export default function LineArt() {
     // let jsx = svgToMotionPathJSX(svg);
     const cathedral = lincolnCathedralSvg();
     return (
