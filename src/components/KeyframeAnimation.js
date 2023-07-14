@@ -167,7 +167,7 @@ export default function KeyframeAnimation({json, fixedWidth=800, fixedHeight=800
             width: '100%',
             aspectRatio: '1/1',
             height: 'auto'
-        }} alt={name+' fallback image (no javascript animation)'} src={'/'+name+'.svg'} />
+        }} alt={name+' fallback image (no javascript animation)'} src={'/fallbacks/'+name+'.svg'} />
             </noscript>
         </motion.div>
     )
