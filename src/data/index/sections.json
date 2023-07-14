@@ -1,5 +1,5 @@
-[
-    {
+{
+    "who": {
         "order": 1,
         "id": "who",
         "title": "Who I am",
@@ -12,19 +12,19 @@
             {"markdown": "### [Find out more](/about)"}
         ]
     },
-    {
+    "what": {
         "order": 2,
         "id": "what",
         "title": "What I have done",
         "contents": [
             {"markdown": "Most recently, I developed **this website using Next.js**."},
-            {"animation": "lincoln_cathedral"},
+            {"animation": "responsive_design"},
             {"markdown": "I have also **worked with multiple clients** to produce other **responsive websites**."},
             {"markdown": "I have developed **dynamic e-commerce templates** using Shopify, **static sites**, as well as a **full-stack React Poker application**."},
             {"markdown": "### [View my work](/projects)"}
         ]
     },
-    {
+    "how": {
         "order": 3,
         "id": "how",
         "title": "How I can help",
@@ -35,4 +35,4 @@
             {"markdown": "### [Get in touch](/contact)"}
         ]
     }
-]
+}
