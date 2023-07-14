@@ -102,14 +102,12 @@ function getMotionLines(paths, durations, strokeWidth) {
 export default function KeyframeAnimation({json, fixedWidth=800, fixedHeight=800}) {
     const containerRef = useRef(null);
     const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
-    const [strokeWidth, setStrokeWidth] = useState({strokeWidth: 4});
+    const strokeWidth = 4;
 
     useEffect(() => {
         const updateContainerSize = () => {
         const containerWidth = containerRef.current.clientWidth;
         setContainerSize({ width: containerWidth, height: containerWidth });
-        if (containerWidth > 400) setStrokeWidth(2)
-        else setStrokeWidth(4);
         };
 
         updateContainerSize();
