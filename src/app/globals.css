@@ -200,6 +200,7 @@ footer {
   height: auto;
   background: none;
   overflow-y:visible;
+  scroll-margin-top: 60px;
 }
 
 .sections section.project,
@@ -488,6 +489,8 @@ p {
     display: inherit;
     padding-right: 8px;
   }
+
+  .sections section { scroll-margin-top: 0; }
 
   .sections section .content {
     max-width: none;
