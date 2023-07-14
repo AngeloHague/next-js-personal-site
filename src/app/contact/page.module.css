@@ -28,10 +28,12 @@
 
 .links li a:hover {
     opacity: 100%;
+    transform: scale(1.2);
 }
 
 form.contact {
     width: 100%;
+    max-width: 398px;
 }
 
 form.contact input,

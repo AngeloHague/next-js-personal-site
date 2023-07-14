@@ -13,14 +13,14 @@ export default function ProjectsPage() {
   const projectMetadata = getProjectMetadata();
     return (
       <main>
-        <div className="sections">
+        <div className="sections projects">
           <HeroSection
             subtitle='Select a star'
             btn_text='Or read below'
             btn_link={'#' + Object.keys(projectMetadata)[0]}
           />
           <ProjectSections projectMetadata={projectMetadata} />
-          <SideNav slugs={Object.keys(projectMetadata)} />
+          <SideNav slugs={Object.keys(projectMetadata)} columns={2} />
       </div>
       </main>
     );

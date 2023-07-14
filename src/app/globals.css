@@ -485,6 +485,9 @@ p {
 }
 
 @media (min-width: 1000px) {
+  #page_nav .hideDesktop {
+    display: none;
+  }
   #nav nav .logo span {
     display: inherit;
     padding-right: 8px;
@@ -520,5 +523,18 @@ p {
     grid-column: 1;
     grid-row: 1 / span 999;
   }
+
+  div.sections.projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "hero hero"
+        ". .";
+  }
+  div.sections.projects #hero {
+    grid-area: hero;
+  }
+
+
   
 }

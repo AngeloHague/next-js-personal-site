@@ -3,6 +3,10 @@ section.project h3 a {
     padding: 8px;
     box-sizing: border-box;
 }
+section.project {
+  max-width: 392px;
+  margin: auto;
+}
 .preview {
     width: 100%;
     aspect-ratio: 333/236;
