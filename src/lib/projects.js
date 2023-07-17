@@ -12,3 +12,4 @@ export const getProjectMetadata = () => {
     // console.log(data);
     return data;
 }
+export const projectMetadata = getProjectMetadata();
