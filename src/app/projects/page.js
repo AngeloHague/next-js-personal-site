@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import ProjectSections from "./ProjectSections";
 import { projectMetadata } from "@/lib/projects";
 import { SideNav } from "@/components/SideNav";
+import ProjectStars from "./ProjectStars";
 
 export const metadata = {
   title: 'Projects | Angelo Hague',
@@ -17,7 +18,9 @@ export default function ProjectsPage() {
             btn_text='Or read below'
             btn_link={'#' + Object.keys(projectMetadata)[0]}
             low_moon={true}
-          />
+          >
+            <ProjectStars projects={projectMetadata} />
+          </HeroSection>
           <ProjectSections projectMetadata={projectMetadata} />
           <SideNav slugs={Object.keys(projectMetadata)} columns={2} />
       </div>
