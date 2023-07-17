@@ -1,6 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import ProjectSections from "./ProjectSections";
-import { getProjectMetadata } from "@/lib/projects";
+import { projectMetadata } from "@/lib/projects";
 import { SideNav } from "@/components/SideNav";
 
 export const metadata = {
@@ -8,9 +8,7 @@ export const metadata = {
   description: 'An interactive map of my recent projects. Scroll down to view them in a grid instead.',
 }
 
-
 export default function ProjectsPage() {
-  const projectMetadata = getProjectMetadata();
     return (
       <main>
         <div className="sections projects">
@@ -18,6 +16,7 @@ export default function ProjectsPage() {
             subtitle='Select a star'
             btn_text='Or read below'
             btn_link={'#' + Object.keys(projectMetadata)[0]}
+            low_moon={true}
           />
           <ProjectSections projectMetadata={projectMetadata} />
           <SideNav slugs={Object.keys(projectMetadata)} columns={2} />

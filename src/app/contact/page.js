@@ -17,6 +17,7 @@ export default function ContactPage() {
             subtitle='Find me on'
             btn_text='Or use this form'
             btn_link={'#form'}
+            low_moon={true}
           >
             <ContactLinks />
           </HeroSection>

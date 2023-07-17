@@ -193,7 +193,7 @@ footer {
 .sections {
   display: flex;
   flex-direction: column;
-  gap: 20vh;
+  gap: clamp(64px,20vh,128px);
 }
 
 .sections section {
@@ -256,6 +256,12 @@ footer {
   padding-top: 32px;
   shape-rendering: geometricPrecision;
   transition: all 0.4s;
+}
+
+.sections section#hero .logo-container .moon.low {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(64px);
 }
 
 .sections section#hero .logo-container h1 {
