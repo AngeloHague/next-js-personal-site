@@ -190,6 +190,12 @@ footer {
   height: auto;
 }
 
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20vh;
+}
+
 .sections section {
   display: flex;
   flex-direction: column;
