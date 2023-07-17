@@ -48,7 +48,7 @@ export default function ProjectSections({projectMetadata}) {
             <h2>{projectMetadata[section].title}</h2>
             <p>{projectMetadata[section].description}</p>
             <ProjectPreview id={section} />
-            <h3><a>Explore this project</a></h3>
+            <h3><a href={'/projects/'+section}>Explore</a></h3>
         </section>)
     })
     return sections;
