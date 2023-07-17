@@ -7,13 +7,14 @@ import stars from '@/assets/Stars.svg'
 import { handleScroll } from "@/lib/scrolling";
 import ShimmerAnimation from './ShimmerAnimation';
 
-export default function HeroSection({home=false, show_moon=false, btn_text='Dive Deeper', btn_link, subtitle, children}) {
-  'use client'
+export default function HeroSection({home=false, low_moon=false, btn_text='Dive Deeper', btn_link, subtitle, children}) {
+  // 'use client'
     const title = (home) ? <h1>Angelo Hague</h1> : '';
     const homeClass =  (home) ? "home" : '';
-    const moon_el = (show_moon || home) ? 
+    const moonClass = (low_moon) ? 'moon low' : 'moon';
+    const moon_el = (low_moon || home) ? 
     <Image
-        className='moon'
+        className={moonClass}
         priority
         src={moon}
         width={138}
