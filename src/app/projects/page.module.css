@@ -10,6 +10,7 @@ section.project h3 a {
 section.project {
   max-width: 392px;
   margin: auto;
+  padding: 0 48px;
 }
 .preview {
     width: 100%;

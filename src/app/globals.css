@@ -299,6 +299,7 @@ footer {
 }
 
 .sections section .content {
+  width: 100%;
   max-width: 392px;
   margin: auto;
 }
