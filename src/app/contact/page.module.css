@@ -19,7 +19,7 @@
     background-color: #fff;
     border-radius: 32px;
     opacity: 75%;
-    transition: all ease 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
 }
 
 .links li a img {
