@@ -5,10 +5,17 @@ import stars from '@/assets/Stars.svg'
 import { handleScroll } from "@/lib/scrolling";
 import ShimmerAnimation from './ShimmerAnimation';
 
-export default function HeroSection({home=false, low_moon=false, btn_text='Dive Deeper', btn_link, subtitle, children}) {
+export default function HeroSection({home=false, low_moon=false, btn_text='Dive Deeper', btn_link, subtitle, requireJS=false, children}) {
     const title = (home) ? <h1>Angelo Hague</h1> : '';
     const homeClass =  (home) ? "home" : '';
     const moonClass = (low_moon) ? 'moon low' : 'moon';
+    const noJS = (requireJS) ?
+      <noscript>
+        <div className='requireJS'>
+          <h3><br/>No javascript :( </h3>
+        </div>
+      </noscript>
+      : '';
     const moon_el = (low_moon || home) ? 
     <Image
         className={moonClass}
@@ -34,6 +41,7 @@ export default function HeroSection({home=false, low_moon=false, btn_text='Dive 
                         <h3>{subtitle}</h3>
                         {moon_el}
                         {children}
+                    {noJS}
                     </div>
                 </div>
                 <div className="dive_deeper">

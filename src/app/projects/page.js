@@ -18,6 +18,7 @@ export default function ProjectsPage() {
             btn_text='Or read below'
             btn_link={'#' + Object.keys(projectMetadata)[0]}
             low_moon={true}
+            requireJS={true}
           >
             <ProjectStars projects={projectMetadata} />
           </HeroSection>
