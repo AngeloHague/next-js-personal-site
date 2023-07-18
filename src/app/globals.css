@@ -186,6 +186,8 @@ footer {
 
 .home_section .animationContainer {
   width: 100%;
+  max-width: 800px;
+  max-height: 800px;
   aspect-ratio: 1/1;
   height: auto;
 }
@@ -313,6 +315,7 @@ footer {
 .sections section .content {
   width: 100%;
   max-width: 392px;
+  box-sizing: border-box;
   margin: auto;
 }
 
@@ -522,8 +525,8 @@ p {
 
   .sections section .content {
     max-width: none;
-    padding: 32px;
-    column-gap: 32px;
+    padding: 32px 10%;
+    column-gap: 20%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: min-content;
