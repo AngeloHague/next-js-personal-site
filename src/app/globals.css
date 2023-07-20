@@ -26,7 +26,6 @@ h1, h2, h3, p, button {
   color: #fff;
   font-weight: 400;
   font-style: normal;
-  line-height: 100%;
 }
 
 button {
@@ -271,7 +270,7 @@ footer {
 
 .sections section#hero .logo-container h1 {
   margin: auto;
-  padding: 14vh 16px 0 16px;
+  padding: 14vh 44px 0 44px;
 }
 
 .sections section#hero .logo-container h3 {
@@ -392,6 +391,7 @@ h2 {
   font-size: clamp(2.4rem, 70vw, 4.8rem);
   font-weight: 200;
   padding-top: 2rem;
+  line-height: 100%;
 }
 
 h3 {
