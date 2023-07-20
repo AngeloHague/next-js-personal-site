@@ -161,8 +161,11 @@ small {
 }
 
 footer {
+  position: relative;
+  top: -48px;
   text-align: center;
   padding: 16px;
+  z-index: 999;
 }
 
 #side_menu_checkbox:checked ~ nav,
@@ -234,6 +237,7 @@ footer {
   align-items: center;
   overflow: hidden;
 }
+.sections section#hero .logo-container.full { height: 100%; }
 .sections section#hero .logo-container div {
   display: flex;
   flex-direction: column;
