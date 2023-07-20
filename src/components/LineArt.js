@@ -125,8 +125,7 @@ export default function LineArt({json, fixedWidth=800, fixedHeight=800}) {
         <motion.div className='animationContainer' ref={containerRef}
         style={{
             width: '100%',
-            aspectRatio: '1/1',
-            height: 'auto'
+            height: '100%'
         }}
         >
             <motion.svg
