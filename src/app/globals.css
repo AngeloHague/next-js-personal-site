@@ -189,8 +189,6 @@ footer {
 
 .home_section .animationContainer {
   width: 100%;
-  max-width: 800px;
-  max-height: 800px;
   aspect-ratio: 1/1;
   height: auto;
 }
@@ -530,15 +528,21 @@ p {
   .sections section .content {
     max-width: none;
     padding: 32px 10%;
-    column-gap: 20%;
+    column-gap: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: min-content;
+    transition: column-gap 0.4s;
   }
 
   .sections section:nth-child(even) .content * {
     width: 100%;
+    max-width: 600px;
     grid-column: 1;
+  }
+  .sections section .content .animationContainer {
+    display: flex;
+    align-items: center;
   }
   .sections section:nth-child(even) .content .animationContainer {
     width: 100%;
@@ -566,7 +570,10 @@ p {
   div.sections.projects #hero {
     grid-area: hero;
   }
+}
 
-
-  
+@media (min-width: 1920px) {
+  .sections section .content {
+    column-gap: 20%;
+  }
 }
