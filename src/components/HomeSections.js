@@ -3,6 +3,7 @@ import Markdown from 'markdown-to-jsx';
 import React from 'react'
 import LineArt from './LineArt';
 import responsive from '@/data/animations/responsive.json'
+import cathedral from '@/data/animations/cathedral.json'
 import KeyframeAnimation from './KeyframeAnimation';
 
 export const sectionMetadata = getSectionMetadata();
@@ -10,7 +11,7 @@ export const sectionMetadata = getSectionMetadata();
 const animations = {
     lincoln_cathedral: {
         type: 'lineart',
-        src: 'src'
+        src: cathedral
     },
     responsive_design: {
         type: 'keyframe',
@@ -28,9 +29,25 @@ export default function HomeSections({svg})
                 if (k=='markdown') return <p><Markdown>{subsec[k]}</Markdown></p>
                 else if (k='animation') {
                     if (animations[subsec[k]].type == 'keyframe') {
-                        return(<KeyframeAnimation json={animations[subsec[k]].src} />)
+                        let src = animations[subsec[k]].src;
+                        let { width, height } = src;
+                        return (
+                            <KeyframeAnimation
+                                json={animations[subsec[k]].src}
+                                fixedWidth={width}
+                                fixedHeight={height}
+                            />
+                        )
                     } else if (animations[subsec[k]].type == 'lineart')  {
-                        return(<LineArt json={animations[subsec[k]].src} />)
+                        let src = animations[subsec[k]].src;
+                        let { width, height } = src;
+                        return (
+                            <LineArt
+                                json={animations[subsec[k]].src}
+                                fixedWidth={width}
+                                fixedHeight={height}
+                            />
+                        )
                     }
                 }
             })

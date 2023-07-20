@@ -1,5 +1,7 @@
 {
-"name": "responsive_design",
+"name": "Responsive Design",
+"width": 800,
+"height": 800,
 "durations": {
 "animation": 2.5,
 "fadein": [0,0,1,1],
