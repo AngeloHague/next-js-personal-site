@@ -109,6 +109,7 @@ export default function LineArt({json, fixedWidth=800, fixedHeight=800}) {
     // draw lines
     let durations, paths, polylines, lines;
     let name = json.name;
+    let file_name = name.toLowerCase().replace(' ','_');
     for (let el in json) {
         if (el=='paths') {
             paths = getMotionPaths(json[el], strokeWidth)
@@ -145,7 +146,7 @@ export default function LineArt({json, fixedWidth=800, fixedHeight=800}) {
             width: '100%',
             aspectRatio: '1/1',
             height: 'auto'
-        }} alt={name+' fallback image (no javascript animation)'} src={'/fallbacks/'+name+'.svg'} />
+        }} alt={name+' fallback image (no javascript animation)'} src={'/fallbacks/'+file_name+'.svg'} />
             </noscript>
         </motion.div>
     )
