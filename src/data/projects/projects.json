@@ -17,7 +17,7 @@
         "links": {
             "github": {
                 "text": "source",
-                "href": "https://github.com/AngeloHague/}Zebra-Menswear"
+                "href": "https://github.com/AngeloHague/Zebra-Menswear"
             }
         }
     },
@@ -44,6 +44,10 @@
             "github": {
                 "text": "source",
                 "href": "https://github.com/AngeloHague/CB-Beauty"
+            },
+            "external_link": {
+                "text": "link",
+                "href": "https://cbbeauty.co.uk"
             }
         }
     }

@@ -172,7 +172,20 @@ section.project {
 }
 .projectMoon .content .links p { 
     font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
 }
+.projectMoon .content .links li { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    aspect-ratio: 1/1;
+    height: auto;
+    transition: transform 0.4s;
+}
+.projectMoon .content .links li:hover { transform: scale(1.05); }
 .projectMoon .moon {
     position: absolute;
     width: 100%;
