@@ -541,6 +541,11 @@ p {
     max-width: 600px;
     grid-column: 1;
   }
+  .sections section .content img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+  }
   .sections section .content .animationContainer {
     display: flex;
     align-items: center;
