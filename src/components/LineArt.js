@@ -1,6 +1,6 @@
 'use client'
 import React, { useLayoutEffect, useRef, useEffect, useState } from 'react'
-import { motion } from 'framer-motion';
+import { motion, useAnimation, useInView } from 'framer-motion';
 import Image from 'next/image';
 
 const draw = {
@@ -77,12 +77,12 @@ function getMotionLines(paths, strokeWidth) {
 }
 
 export default function LineArt({json, fixedWidth=800, fixedHeight=800}) {
+    // container ref
     const containerRef = useRef(null);
+    // container scaling
     const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
     const minVal = (fixedWidth < fixedHeight) ? fixedWidth : fixedHeight;
     const strokeWidth = Math.round(minVal / 200, 0);
-    console.log(strokeWidth)
-
     useEffect(() => {
         const updateContainerSize = () => {
         const containerWidth = containerRef.current.clientWidth;
@@ -98,18 +98,18 @@ export default function LineArt({json, fixedWidth=800, fixedHeight=800}) {
         window.removeEventListener('resize', updateContainerSize);
         };
     }, []);
-
+    // check if element in view to trigger animation once when in view
+    const controls = useAnimation();
+    const inView = useInView(containerRef, { once: true });
+    useEffect(() => {
+        if (inView) {
+          controls.start("visible");
+        }
+      }, [controls, inView]);
+    // draw lines
     let durations, paths, polylines, lines;
     let name = json.name;
     for (let el in json) {
-        // if (el=='durations') {
-        //     durations = {
-        //         animation: json[el].animation,
-        //         times: json[el].times,
-        //         fadein: json[el].fadein,
-        //         fadeout: json[el].fadeout,
-        //     }
-        // }
         if (el=='paths') {
             paths = getMotionPaths(json[el], strokeWidth)
         }
@@ -134,7 +134,7 @@ export default function LineArt({json, fixedWidth=800, fixedHeight=800}) {
                 viewBox={`0 0 ${fixedWidth} ${fixedHeight}`} // Replace fixedWidth and fixedHeight with your desired fixed size
                 preserveAspectRatio="xMidYMid meet"
                 initial="hidden"
-                animate="visible"
+                animate={controls}
                 >
                 {paths}
                 {polylines}
