@@ -236,7 +236,7 @@ footer {
   overflow: hidden;
 }
 .sections section#hero .logo-container.full { height: 100%; }
-.sections section#hero .logo-container div {
+.sections section#hero .logo-container > div {
   display: flex;
   flex-direction: column;
   justify-content: center;

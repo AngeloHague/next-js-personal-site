@@ -5,10 +5,20 @@ import stars from '@/assets/Stars.svg'
 import { handleScroll } from "@/lib/scrolling";
 import ShimmerAnimation from './ShimmerAnimation';
 
-export default function HeroSection({home=false, low_moon=false, btn_text='Dive Deeper', btn_link, subtitle, requireJS=false, children}) {
+export default function HeroSection({home=false, low_moon=false, full_space=false, btn_text='Dive Deeper', btn_link, subtitle, requireJS=false, children}) {
     const title = (home) ? <h1>Angelo Hague</h1> : '';
     const homeClass =  (home) ? "home" : '';
     const moonClass = (low_moon) ? 'moon low' : 'moon';
+    const spaceClass = (full_space) ? "logo-container full" : "logo-container";
+    const seaBed = (full_space) ? <></> :
+    <div className="dive_deeper">
+        <a href={btn_link} onClick={handleScroll}>
+            <div>
+              <ShimmerAnimation />
+                <h3>{btn_text}</h3>
+            </div>
+        </a>
+    </div>;
     const noJS = (requireJS) ?
       <noscript>
         <div className='requireJS'>
@@ -27,7 +37,7 @@ export default function HeroSection({home=false, low_moon=false, btn_text='Dive 
     /> : '';
     return (
         <section className={homeClass} id="hero">
-                <div className="logo-container">
+                <div className={spaceClass}>
                     <Image
                       className='stars'
                       priority
@@ -44,14 +54,7 @@ export default function HeroSection({home=false, low_moon=false, btn_text='Dive 
                     {noJS}
                     </div>
                 </div>
-                <div className="dive_deeper">
-                    <a href={btn_link} onClick={handleScroll}>
-                        <div>
-                          <ShimmerAnimation />
-                            <h3>{btn_text}</h3>
-                        </div>
-                    </a>
-                </div>
+                {seaBed}
             </section>
     )
 }
