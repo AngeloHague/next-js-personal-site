@@ -19,7 +19,7 @@ const animations = {
     },
 }
 
-export default function HomeSections({svg})
+export default function HomeSections()
 {
     const sections = sectionMetadata.map(async(slug) => {
         let section = getSection(slug)
