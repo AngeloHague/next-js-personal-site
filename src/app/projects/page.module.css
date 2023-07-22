@@ -2,6 +2,7 @@ section.project h3 {
     width: 100%;
 }
 section.project h3 a {
+    margin-top: 32px;
     font-size: 1.8rem;
     padding: 8px;
     width: 100%;
