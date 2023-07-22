@@ -17,6 +17,7 @@ export default function page({params}) {
         <main>
             <div className='sections'>
                 <HeroSection
+                    back_link='/projects/'
                     full_space={true}
                 >
                     <ProjectMoon project={project} />

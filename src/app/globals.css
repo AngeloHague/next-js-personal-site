@@ -20,7 +20,7 @@ img {
   pointer-events: none;
 }
 
-h1, h2, h3, p, button {
+h1, h2, h3, h4, p, button {
   padding: 0;
   margin: 0;
   color: #fff;
@@ -317,6 +317,20 @@ footer {
   padding: 7px 0 9px 0;
 }
 
+.sections section#hero .back_link {
+  /* position: absolute;
+  top: 76px;
+  left: 48px; */
+  float: left;
+  width: 100%;
+  text-decoration: none;
+}
+.sections section#hero .back_link h4 {
+  /* text-align: left;
+  margin-left: 32px; */
+  margin: 16px 0;
+}
+
 .sections section .content {
   width: 100%;
   max-width: 392px;
@@ -403,6 +417,12 @@ h3 {
   font-size: clamp(1.6rem, 60vw, 2.2rem);
   font-weight: 400;
   padding-top: 8px;
+}
+h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 p {
   width: 100%;
