@@ -24,6 +24,7 @@ export default function page({params}) {
                 >
                     <div className={styles.layoutGrid}>
                         <div className={styles.moonContainer}>
+                            <a className='back_link' href='/projects'><h4> &lt; Go Back</h4></a>
                             <ProjectMoon project={project} />
                         </div>
                         <div className={styles.infoContainer}>

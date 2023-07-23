@@ -226,6 +226,10 @@ section.project {
     box-sizing: border-box;
 }
 
+.moonContainer {
+    flex-direction: column;
+}
+
 .infoContainer {
     padding: 0 32px 48px;
     box-sizing: border-box;
