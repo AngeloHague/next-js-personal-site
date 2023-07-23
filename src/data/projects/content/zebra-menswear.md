@@ -1,3 +1,3 @@
-This project gave me the oppurtunity to work with a client and learn Shopify Liquid simultaneously.
+This project gave me the opportunity to work with a client and learn Shopify Liquid simultaneously.
 
 I initially created this theme as a standard Shopify 1.0 theme, but then later upgraded it to Shopify 2.0 JSON Theme to make use of the extensive metadata system. This allowed me to allow my client to add project banners to collections, alongside collection logos (as collections only typically have one image).
