@@ -35,6 +35,10 @@ button {
   text-transform: uppercase;
 }
 
+details summary {
+  cursor: pointer;
+}
+
 .page {
   margin-top: 60px;
 }
@@ -297,6 +301,9 @@ footer {
 .sections section#hero .logo-container .requireJS h3 {
   font-weight: 600;
 }
+
+.sections section#hero .logo-container .heroContent { width: 100%; }
+.sections section#hero .logo-container .heroContent.full { height: 100%; }
 
 .sections section#hero .dive_deeper {
   background: linear-gradient(180deg, #1A0F38 0%, #0D0620 100%);
