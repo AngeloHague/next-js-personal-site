@@ -1,3 +1,15 @@
+# Angelo Hague Personal Website
+## To-do list
+- About Me Page
+- Add "How I can help" animation
+- Style Contact Form
+- Add error handling
+- Make Project Stars zoom in on planets to show preview
+- Animate Side Nav component
+- Add preview images to the individual projects pages
+- Make project page details collapse when another is expanded
+- Scale project pags up for desktop
+# Next.js README
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
