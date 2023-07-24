@@ -1,4 +1,6 @@
 # Angelo Hague Personal Website
+## Preview here
+[View my progress on Netlify](https://darling-toffee-0523b4.netlify.app/)
 ## To-do list
 - About Me Page
 - Add "How I can help" animation
