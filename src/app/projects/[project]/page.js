@@ -3,6 +3,8 @@ import { getProjectContent, getProjectMetadata, projectMetadata } from "@/lib/pr
 import HeroSection from '@/components/HeroSection';
 import styles from '../page.module.css'
 import { ProjectMoon } from '../ProjectStars';
+import chevronDown from '@/assets/chevron-down 1.svg'
+import Image from 'next/image';
 
 export async function generationStaticParams() {
     const projects = await getProjectMetadata();
@@ -30,11 +32,21 @@ export default function page({params}) {
                         <div className={styles.infoContainer}>
                             <div>
                                 <details>
-                                    <summary>Images</summary>
-                                    <p>Hello images</p>
+                                    <summary>Images <Image
+                                        class={styles.arrow}
+                                        height={24}
+                                        width={24}
+                                        src={chevronDown}
+                                    /> </summary>
+                                    {markdown}
                                 </details>
                                 <details open>
-                                    <summary>About</summary>
+                                    <summary>About <Image
+                                        class={styles.arrow}
+                                        height={24}
+                                        width={24}
+                                        src={chevronDown}
+                                    /> </summary>
                                     {markdown}
                                 </details>
                             </div>

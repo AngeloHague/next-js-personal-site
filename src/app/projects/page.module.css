@@ -245,21 +245,25 @@ section.project {
     border-radius: 24px;
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(2px);
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
-.infoContainer details {
-    box-sizing: border-box;
-    max-height: 90%;
+.infoContainer details[open] {
+    height: calc(100% - 32px);
     display: block;
 }
 .infoContainer details > div {
-    height: 30vh;
+    height: calc(100% - 4rem);
     overflow-y: scroll;
-    box-sizing: border-box;
 }
 .infoContainer details summary {
-    padding: 8px;
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
     font-size: 2.4rem;
     text-transform: uppercase;
 }
@@ -270,6 +274,10 @@ section.project {
 .infoContainer details p {
     text-align: left;
     padding-top: 16px;
+}
+.infoContainer details .arrow { transition: transform 0.4s; }
+.infoContainer details[open] .arrow {
+    transform: scaleY(-1);
 }
 
 @media (min-width: 800px) {
