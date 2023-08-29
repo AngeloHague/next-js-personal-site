@@ -4,7 +4,8 @@ import moon from '@/assets/Moon.svg'
 import stars from '@/assets/Stars.svg'
 import { handleScroll } from "@/lib/scrolling";
 import ShimmerAnimation from './ShimmerAnimation';
-import styles from './styles/hero.module.css'
+import styles from './styles/hero.module.scss'
+import starSass from './styles/stars.module.sass'
 
 export default function HeroSection({home=false, low_moon=false, full_space=false, btn_text='Dive Deeper', btn_link, subtitle, requireJS=false, back_link, stretchHero=false, children}) {
     const go_back = (back_link) ? <><a className='back_link' href={back_link}><h4> &lt; Go Back</h4></a></> : <></>;
@@ -36,16 +37,15 @@ export default function HeroSection({home=false, low_moon=false, full_space=fals
         alt="Angelo Hague Moon Logo"
     /> : '';
     return (
-        <section className={styles.hero} id='hero'>
+        <section className={(home) ? [styles.hero,styles.home].join(' ') : styles.hero} id='hero'>
           <div className={styles.space}>
-              <Image
-                className={styles.stars}
-                priority
-                src={stars}
-                width={1920}
-                height={1080}
-                alt="Angelo Hague Moon Logo"
-              />
+              <div className={styles.stars}>
+                <div className={styles.container}>
+                  <div id={starSass.stars} />
+                  <div id={starSass.stars2} />
+                  <div id={starSass.stars3} />
+                </div>
+              </div>
               <div className={styles.heroContent}>
                   {go_back}
                   {title}

@@ -1,0 +1,81 @@
+// n is number of stars required
+@function multiple-box-shadow ($n) 
+  $value: '#{random(3840)}px #{random(2160)}px #FFF'
+  @for $i from 2 through $n
+    $value: '#{$value} , #{random(3840)}px #{random(2160)}px #FFF'
+
+  @return unquote($value)
+
+$shadows-small:  multiple-box-shadow(150)
+$shadows-medium: multiple-box-shadow(125)
+$shadows-big:    multiple-box-shadow(75)
+
+#stars
+  $radius: 3px
+  width: $radius
+  height: $radius
+  border-radius: 50%
+  background: transparent
+  box-shadow: $shadows-small
+  z-index: 1
+  animation			: animStar 100s linear infinite
+    
+  &:after
+    content: " "
+    position: absolute
+    top: 2000px
+    width: $radius
+    height: $radius
+  border-radius: 50%
+    background: transparent
+    box-shadow: $shadows-small
+  z-index: 1
+    
+#stars2
+  $radius: 5px
+  width: $radius
+  height: $radius
+  border-radius: 50%
+  background: transparent
+  box-shadow: $shadows-medium
+  z-index: 1
+  animation			: animStar 150s linear infinite
+    
+  &:after
+    content: " "
+    position: absolute
+    top: 2000px
+    width: $radius
+    height: $radius
+  border-radius: 50%
+    background: transparent
+    box-shadow: $shadows-medium
+  z-index: 1
+    
+#stars3
+  $radius: 8px
+  width: $radius
+  height: $radius
+  border-radius: 50%
+  background: transparent
+  box-shadow: $shadows-big
+  z-index: 1
+  animation			: animStar 300s linear infinite
+    
+  &:after
+    content: " "
+    position: absolute
+    top: 2000px
+    width: $radius
+    height: $radius
+  border-radius: 50%
+    background: transparent
+    box-shadow: $shadows-big
+  z-index: 1
+
+@keyframes animStar
+  from	
+    transform: translateY(0px)
+  to		
+    transform: translateY(-2000px)
+    

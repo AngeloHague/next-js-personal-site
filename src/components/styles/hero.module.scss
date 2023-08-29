@@ -29,13 +29,31 @@
     box-sizing: border-box;
   }
   
-  .hero .space .stars {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .stars {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .stars .container {
+    width: 3840px;
+    height: 2160px;
+    display: block;
+  }
+  
+  @for $i from 1 through 200 {
+    .star:nth-of-type(#{$i}) {
+      $radius: random(2)*2 + px;
+      top: random(101) - 1 + vh;
+      left: random(101) - 1 + vw;
+      width: $radius;
+      height: $radius;
+      opacity: random(50) / 100 + 0.5;
+    }
   }
   
   .hero .space .moon {
@@ -79,7 +97,10 @@
     font-weight: 600;
   }
   
-  .hero .space .heroContent { width: 100%; }
+  .hero .space .heroContent { 
+    width: 100%;
+    z-index: 2;
+   }
   .hero .space .heroContent.full { height: 100%; }
   
   .hero .dive_deeper {
@@ -128,7 +149,7 @@
     margin: 0;
     text-align: center;
   }
-  .sections section.home#hero .logo-container h3 {
+  .hero .space h3 {
     width: 100%;
     text-align: center;
     letter-spacing: 0.6em;
@@ -138,5 +159,6 @@
   .hero .space .moon {
     width: 19.2rem;
     height: 19.2rem;
+    z-index: 2;
   }
 }
