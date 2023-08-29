@@ -4,16 +4,14 @@ import moon from '@/assets/Moon.svg'
 import stars from '@/assets/Stars.svg'
 import { handleScroll } from "@/lib/scrolling";
 import ShimmerAnimation from './ShimmerAnimation';
+import styles from './styles/hero.module.css'
 
 export default function HeroSection({home=false, low_moon=false, full_space=false, btn_text='Dive Deeper', btn_link, subtitle, requireJS=false, back_link, stretchHero=false, children}) {
     const go_back = (back_link) ? <><a className='back_link' href={back_link}><h4> &lt; Go Back</h4></a></> : <></>;
+    const moonClass = (low_moon) ? [styles.moon, styles.low].join(' ') : styles.moon;
     const title = (home) ? <h1>Angelo Hague</h1> : '';
-    const homeClass =  (home) ? "home" : '';
-    const moonClass = (low_moon) ? 'moon low' : 'moon';
-    const spaceClass = (full_space) ? "logo-container full" : "logo-container";
-    const heroContainerClass = (stretchHero) ? 'heroContent full' : 'heroContent';
     const seaBed = (full_space) ? <></> :
-    <div className="dive_deeper">
+    <div className={styles.dive_deeper}>
         <a href={btn_link} onClick={handleScroll}>
             <div>
               <ShimmerAnimation />
@@ -38,26 +36,26 @@ export default function HeroSection({home=false, low_moon=false, full_space=fals
         alt="Angelo Hague Moon Logo"
     /> : '';
     return (
-        <section className={homeClass} id="hero">
-                <div className={spaceClass}>
-                    <Image
-                      className='stars'
-                      priority
-                      src={stars}
-                      width={1920}
-                      height={1080}
-                      alt="Angelo Hague Moon Logo"
-                    />
-                    <div className={heroContainerClass}>
-                        {go_back}
-                        {title}
-                        <h3>{subtitle}</h3>
-                        {moon_el}
-                        {children}
-                    {noJS}
-                    </div>
-                </div>
-                {seaBed}
-            </section>
+        <section className={styles.hero} id='hero'>
+          <div className={styles.space}>
+              <Image
+                className={styles.stars}
+                priority
+                src={stars}
+                width={1920}
+                height={1080}
+                alt="Angelo Hague Moon Logo"
+              />
+              <div className={styles.heroContent}>
+                  {go_back}
+                  {title}
+                  <h3>{subtitle}</h3>
+                  {moon_el}
+                  {children}
+              {noJS}
+              </div>
+          </div>
+          {seaBed}
+      </section>
     )
 }

@@ -219,123 +219,13 @@ footer {
   padding-bottom: 48px;
 }
 
-.sections section.project,
-.sections section#hero {
+.sections section.projectx {
   margin: 0;
   padding: 0;
   height: 100vh;
   min-height: 680px;
   width: 100%;
   display: block;
-}
-
-.sections section#hero .logo-container {
-  position: relative;
-  background: linear-gradient(180deg, #270039 0%, #231A5B 100%);
-  width: 100%;
-  height: 60%;
-  margin: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.sections section#hero .logo-container.full { height: 100%; }
-.sections section#hero .logo-container > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.sections section#hero .logo-container .stars {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.sections section#hero .logo-container .moon {
-  width: 13.8rem;
-  aspect-ratio: 1/1;
-  margin: auto;
-  padding-top: 32px;
-  shape-rendering: geometricPrecision;
-  transition: all 0.4s;
-}
-
-.sections section#hero .logo-container .moon.low {
-  position: absolute;
-  bottom: 0;
-  transform: translateY(64px);
-}
-
-.sections section#hero .logo-container h1 {
-  margin: auto;
-  padding: 14vh 44px 0 44px;
-}
-
-.sections section#hero .logo-container h3 {
-  padding-top: 8px;
-  letter-spacing: .2em;
-  transition: letter-spacing 0.4s;
-}
-
-.sections section#hero.home .logo-container h3 {
-  letter-spacing: .05em;
-}
-
-.sections section#hero .logo-container .requireJS {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(180deg, rgba(13, 6, 32, 1), rgba(13, 6, 32, 0.35));
-  /* backdrop-filter: blur(4px); */
-}
-
-.sections section#hero .logo-container .requireJS h3 {
-  font-weight: 600;
-}
-
-.sections section#hero .logo-container .heroContent { width: 100%; }
-.sections section#hero .logo-container .heroContent.full { height: 100%; }
-
-.sections section#hero .dive_deeper {
-  background: linear-gradient(180deg, #1A0F38 0%, #0D0620 100%);
-  height: 40%;
-  text-align: center;
-}
-.sections section#hero .dive_deeper img,
-.sections section#hero .dive_deeper svg {
-  position: relative;
-  top: -1px;
-}
-.sections section#hero .dive_deeper a {
-  text-decoration: none;
-}
-.sections section#hero .dive_deeper h3 {
-  position: relative;
-  margin-top: -64px;
-  padding: 7px 0 9px 0;
-}
-
-.sections section#hero .back_link {
-  /* position: absolute;
-  top: 76px;
-  left: 48px; */
-  float: left;
-  width: 100%;
-  text-decoration: none;
-}
-.sections section#hero .back_link h4 {
-  /* text-align: left;
-  margin-left: 32px; */
-  margin: 16px 0;
 }
 
 .sections section .content {
@@ -463,12 +353,6 @@ p {
   padding-bottom: 0;
 }
 
-@media (min-width: 480px) {
-  .sections section#hero .logo-container h3 {
-    letter-spacing: .25em;
-  }
-}
-
 @media (min-width: 800px) {
   #hamburger {
     display: none;
@@ -526,23 +410,6 @@ p {
   }
   #nav a:hover {
     letter-spacing: .35em;
-  }
-  .sections section#hero .logo-container h1 {
-    width: 100%;
-    padding: 62px 0 0 0;
-    margin: 0;
-    text-align: center;
-  }
-  .sections section.home#hero .logo-container h3 {
-    width: 100%;
-    text-align: center;
-    letter-spacing: 0.6em;
-    padding: 8px 0 0 0;
-    margin: 0;
-  }
-  .sections section#hero .logo-container .moon {
-    width: 19.2rem;
-    height: 19.2rem;
   }
 }
 
