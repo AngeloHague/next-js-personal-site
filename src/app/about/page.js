@@ -9,6 +9,7 @@ export default function AboutPage() {
             subtitle='Origin: Earth'
             btn_text='Or use this form'
             btn_link={'#form'}
+            full_space
           />
           <SideNav slugs={[]} />
           </div>
