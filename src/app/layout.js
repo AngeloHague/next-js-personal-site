@@ -1,4 +1,4 @@
-import './globals.css'
+import './globals.scss'
 import { Quicksand } from 'next/font/google'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
