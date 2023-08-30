@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 import { handleScroll } from "@/lib/scrolling";
 import Image from 'next/image';
 import moon from '@/assets/Moon.svg'

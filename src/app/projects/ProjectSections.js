@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import ScreenPreview from '@/assets/ScreenPreview.svg'
 import { getProjectMetadata, PreviewDirectory } from '@/lib/projects'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 import path from 'path'
 import fs from 'fs'
 
