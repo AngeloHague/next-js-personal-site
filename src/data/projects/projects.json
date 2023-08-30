@@ -1,7 +1,18 @@
 {
+    "ooto-london": {
+        "title": "OOTO London",
+        "description": "Static company website for London Archival Vintage Designer Clothing Store, crafted with Next.js 13",
+        "type": "next.js",
+        "links": {
+            "external_link": {
+                "text": "link",
+                "href": "https://www.ootolondon.com"
+            }
+        }
+    },
     "this-website": {
         "title": "This Website",
-        "description": "A personal portfolio, crafted with Next.js.",
+        "description": "A personal portfolio, crafted with Next.js 13.",
         "type": "next.js",
         "links": {
             "github": {
