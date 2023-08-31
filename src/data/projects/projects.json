@@ -1,7 +1,7 @@
 {
     "ooto-london": {
         "title": "OOTO London",
-        "description": "Static company website for London Archival Vintage Designer Clothing Store, crafted with Next.js 13",
+        "description": "Static company website for Archival Vintage Designer Clothing Store in London, crafted with Next.js 13.",
         "type": "next.js",
         "links": {
             "external_link": {
@@ -23,18 +23,22 @@
     },
     "zebra-menswear": {
         "title": "Zebra Menswear",
-        "description": "A custom Shopify Liquid template, created from scratch.",
+        "description": "A custom Shopify Liquid template for Chesterfield Designer Clothing Store, created from scratch.",
         "type": "shopify",
         "links": {
             "github": {
                 "text": "source",
                 "href": "https://github.com/AngeloHague/Zebra-Menswear"
+            },
+            "external_link": {
+                "text": "link",
+                "href": "https://www.zebramenswear.co.uk/"
             }
         }
     },
     "iou-poker": {
         "title": "IOU Poker",
-        "description": "A full stack poker app created with React Native and Colyseus.js.",
+        "description": "A full stack poker app created with React Native and Colyseus.js as a University Project.",
         "type": "react",
         "links": {
             "github": {
@@ -49,7 +53,7 @@
     },
     "cb-beauty": {
         "title": "CB Beauty",
-        "description": "A static website, made with with HTML, CSS and JavaScript.",
+        "description": "A static website, made with HTML, CSS and JavaScript. My first work with a client.",
         "type": "html",
         "links": {
             "github": {

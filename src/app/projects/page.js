@@ -1,11 +1,8 @@
 import HeroSection from '@/components/HeroSection'
 import { projectMetadata } from '@/lib/projects'
 import React from 'react'
-import ProjectStars from './ProjectStars'
 import styles from './page.module.scss'
 import { PreviewList } from './Preview'
-
-console.log(projectMetadata)
 
 export default function page() {
     return (

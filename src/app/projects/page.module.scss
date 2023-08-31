@@ -285,7 +285,10 @@ section.project {
     width: 100%;
     height: 100%;
 }
-#listView { overflow-y: auto; }
+#listView {
+    overflow-y: auto;
+    & > div {padding-bottom: 200px;}
+}
 .viewSelector {
     position: relative;
     display: flex;
