@@ -41,7 +41,7 @@ export function ProjectPreview({ id, project, preview='', markdown }) {
                         <Image
                             src={'/previews/'+id+'-mobile-preview.png'} fill
                             sizes='(max-width: 480px) 80vw, (max-width: 1200px) 80vw, 50vw'
-                        /> : <p className={styles.missingImage}>{'No mobile preview :('}</p>}
+                        /> : <p className={styles.missingImage}>{'No mobile \npreview :('}</p>}
                     </div>
                     <Image
                         className={styles.overlay} src={mobile1}
