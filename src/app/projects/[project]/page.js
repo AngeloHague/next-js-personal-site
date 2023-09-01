@@ -15,7 +15,6 @@ export async function generationStaticParams() {
 
 export default function page({params}) {
     const md = getProjectContent(params.project);
-    console.log(md);
     return (
         <HeroSection
             full_space
