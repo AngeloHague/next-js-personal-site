@@ -1,59 +1,31 @@
-import React from 'react'
-import { getProjectContent, getProjectMetadata, projectMetadata } from "@/lib/projects";
 import HeroSection from '@/components/HeroSection';
-import styles from '../page.module.css'
-import { ProjectMoon } from '../ProjectStars';
-import chevronDown from '@/assets/chevron-down 1.svg'
-import Image from 'next/image';
+import React from 'react'
+import { ProjectPreview } from '../Preview';
+import { getProjectContent, getProjectMetadata, projectMetadata } from '@/lib/projects';
+import styles from '../page.module.scss'
 
 export async function generationStaticParams() {
     const projects = await getProjectMetadata();
-    return projects.map((project) => ({
-        project: project,
-    }))
+    return projects.map((project) => {
+        return ({
+            project: project
+        })
+    })
 }
 
 export default function page({params}) {
-    const project = projectMetadata[params.project];
-    const markdown = getProjectContent(params.project);
+    const md = getProjectContent(params.project);
+    console.log(md);
     return (
-        <main>
-            <div className='sections'>
-                <HeroSection
-                    // back_link='/projects/'
-                    full_space={true}
-                    stretchHero
-                >
-                    <div className={styles.layoutGrid}>
-                        <div className={styles.moonContainer}>
-                            <a className='back_link' href='/projects'><h4> &lt; Go Back</h4></a>
-                            <ProjectMoon project={project} />
-                        </div>
-                        <div className={styles.infoContainer}>
-                            <div>
-                                <details>
-                                    <summary>Images <Image
-                                        class={styles.arrow}
-                                        height={24}
-                                        width={24}
-                                        src={chevronDown}
-                                    /> </summary>
-                                    {markdown}
-                                </details>
-                                <details open>
-                                    <summary>About <Image
-                                        class={styles.arrow}
-                                        height={24}
-                                        width={24}
-                                        src={chevronDown}
-                                    /> </summary>
-                                    {markdown}
-                                </details>
-                            </div>
-                        </div>
-                    </div>
-                </HeroSection>
-            </div>
-        </main>
+        <HeroSection
+            full_space
+            containerClasses={styles.heroContent}
+          >
+            <ProjectPreview
+                id={params.project}
+                project={projectMetadata[params.project]}
+                markdown={md}
+            />
+        </HeroSection>
     )
 }

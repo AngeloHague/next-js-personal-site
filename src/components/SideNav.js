@@ -1,8 +1,8 @@
 'use client'
 import { handleScroll } from "@/lib/scrolling";
 
-export function SideNav({slugs, columns=1}) {
-    slugs.unshift('hero');
+export function SideNav({slugs, columns=1, includeHero=true}) {
+    if (includeHero) slugs.unshift('hero');
     const nav = slugs.map((slug, index) => {
         const class_name = (index % columns == 0) ? 'anchorTag' : 'anchorTag hideDesktop';
         return (

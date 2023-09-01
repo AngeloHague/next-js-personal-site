@@ -55,7 +55,7 @@ export default function HomeSections()
         return (
         <section id={slug} className='home_section'>
             <div className="content">
-                <h2>{section.title}</h2>
+                <h1>{section.title}</h1>
                 {html}
             </div>
         </section>
