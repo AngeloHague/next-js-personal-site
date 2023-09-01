@@ -6,7 +6,14 @@
         margin-top: 64px;
         scroll-margin-top: 64px;
         overflow-x: hidden;
+        width: 100%;
     }
+}
+
+.container {
+    max-width: 968px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .previews {
@@ -158,6 +165,10 @@
             padding: 8px 0;
             color: #FFF;
             text-decoration: none;
+            transition: transform 0.4s;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
 
         * {

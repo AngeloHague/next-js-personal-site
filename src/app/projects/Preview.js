@@ -7,20 +7,21 @@ import fs from 'fs'
 
 import desktop1 from '@/assets/desktop_overlay_1.svg'
 import mobile1 from '@/assets/mobile_overlay_1.svg'
+import Link from 'next/link';
 
 export function ProjectPreview({ id, project, preview='', markdown }) {
     const desktop_preview = path.join(process.cwd(), 'public', 'previews', id+'-desktop-preview.png');
     const mobile_preview = path.join(process.cwd(), 'public', 'previews', id+'-mobile-preview.png');
     const links = (project.links) ? Object.keys(project.links).map((key) => {
         const link = project.links[key];
-        return <a key='key' href={link.href} target='_blank'>{link.text}</a>
+        return <li key='key'><a href={link.href} target='_blank'>{link.text}</a></li>
     }) : null;
     const buttons = (preview) ? <>
-        {preview=='star' ? <a key='back'>{'< Go Back'}</a> : null}
-        <a key='explore' href={'/projects/'+id}>{'Explore >'}</a>
-    </> : [<a key='back' href='/projects'>{'< Go Back'}</a>,links];
+        {preview=='star' ? <Link key='back'>{'< Go Back'}</Link> : null}
+        <Link key='explore' href={'/projects/'+id}>{'Explore >'}</Link>
+    </> : [<Link key='back' href='/projects'>{'< Go Back'}</Link>,links];
     return (
-        <div id={id}>
+        <div id={id} className={styles.container}>
             <div className={styles.previews}>
                 <div className={styles.desktop}>
                     <div className={styles.imageContainer}>
