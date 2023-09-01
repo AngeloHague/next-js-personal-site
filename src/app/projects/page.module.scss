@@ -290,17 +290,19 @@ section.project {
     & > div {padding-bottom: 200px;}
 }
 .viewSelector {
-    position: relative;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: start;
     gap: 8px;
-    height: 100vh;
+    height: 100%;
+    padding: 64px 0;
     font-size: 2rem;
     flex-wrap: wrap;
     width: 100%;
-    padding-top: 64px;
     box-sizing: border-box;
+    overflow: hidden;
 
     input { display: none; }
     label {
@@ -350,7 +352,7 @@ section.project {
 }
 .heroContent {
     height: 100%;
-    margin: 62px 0;
+    padding: 62px 0 !important;
     box-sizing: border-box;
 }
 

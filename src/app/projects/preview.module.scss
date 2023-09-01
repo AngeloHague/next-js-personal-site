@@ -2,6 +2,8 @@
     & > div {
         min-height: 75vh;
         margin-top: 64px;
+        scroll-margin-top: 64px;
+        overflow-x: hidden;
     }
 }
 
@@ -10,35 +12,125 @@
     width: 100%;
     padding-top: 75%;
     box-sizing: border-box;
+    .imageContainer {
+        position: relative;
+        border-radius: 16px;
+    }
+    .desktopOverlay {
+        position: absolute;
+        top: 0; left: 0;
+        z-index: 4;
+    }
 
     .desktop, .mobile {
         position: absolute;
-        opacity: 0.5;
+        // opacity: 0.5;
 
-        p {
-            position: absolute;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            top: 0; left: 0;
-            width: 100%;
-            height: 100%;
-        }
+        // p {
+        //     position: absolute;
+        //     padding: 0;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     top: 0; left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        // }
     }
     .desktop {
-        top: 0; left: 0;
-        width: 80%;
+        top: 0;
+        left: 3.07%;
+        width: 80.7%;
         height: 100%;
-        // padding-top: 100%;
-        background-color: aqua;
+        // padding-top: 65.7%;
+        // background-color: aqua;
+        .imageContainer {
+            position: absolute;
+            display: block;
+            content: ' ';
+            width: 95.87%;
+            left: 1.58%;
+            top: 22.8%;
+            padding-top: 57.77%;
+            background: rgba(13, 6, 32, 0.40);
+            backdrop-filter: blur(4px);
+            z-index: 2;
+            img {
+                border-radius: 16px;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                padding: 4.3%;
+                object-fit: cover;
+                z-index: 3;
+            }
+            .missingImage {
+                position: absolute;
+                top: 0; left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                padding: 4.15%;
+                margin: 0;
+                font-size: 1.6rem;
+                font-weight: 300;
+                white-space: pre-wrap;
+            }
+        }
+        .overlay {
+            position: absolute;
+            top: 2.8%; left: 0;
+            z-index: 4;
+        }
     }
     .mobile {
-        top: 0; right: 0;
-        width: 35%;
+        top: 0; right: 5.64%;
+        width: 34.35%;
         height: 100%;
-        // padding-top: 100%;
-        background-color: green;
+        // padding-top: 69.94%;
+        // background-color: green;
+        .imageContainer {
+            position: absolute;
+            display: block;
+            content: ' ';
+            width: 85.82%;
+            left: 1.58%;
+            bottom: 8.77%;
+            padding-top: 192%;
+            background: rgba(13, 6, 32, 0.40);
+            backdrop-filter: blur(4px);
+            z-index: 5;
+            img {
+                border-radius: 16px;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                padding: 5%;
+                object-fit: cover;
+                z-index: 6;
+            }
+            .missingImage {
+                position: absolute;
+                top: 0; left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                padding: 4.15%;
+                margin: 0;
+                font-size: 1.6rem;
+                font-weight: 300;
+                white-space: pre-wrap;
+            }
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0; right: 0;
+            z-index: 7;
+        }
     }
 }
 

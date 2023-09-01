@@ -6,7 +6,7 @@ export default function AboutPage() {
       <main>
         <div className="sections">
           <HeroSection
-            subtitle='Origin: Earth'
+            subtitle='Under development'
             btn_text='Or use this form'
             btn_link={'#form'}
             full_space

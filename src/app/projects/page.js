@@ -3,6 +3,7 @@ import { projectMetadata } from '@/lib/projects'
 import React from 'react'
 import styles from './page.module.scss'
 import { PreviewList } from './Preview'
+import { SideNav } from '@/components/SideNav'
 
 export default function page() {
     return (
@@ -29,6 +30,7 @@ export default function page() {
                     </div>
                     <div id={styles.listView}>
                         <PreviewList projectMetadata={projectMetadata} />
+                        {/* <SideNav slugs={Object.keys(projectMetadata)} includeHero={false} /> */}
                     </div>
                 </div>
             </div>
