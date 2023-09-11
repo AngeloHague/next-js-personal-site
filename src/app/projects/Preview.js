@@ -18,9 +18,9 @@ export function ProjectPreview({ id, project, preview='', markdown }) {
         return <li key='key'><a href={link.href} target='_blank'>{link.text}</a></li>
     }) : null;
     const buttons = (preview) ? <>
-        {preview=='star' ? <Link key='back'>{'< Go Back'}</Link> : null}
+        {preview=='star' ? <Link key='back'>{'< Projects'}</Link> : null}
         <Link key='explore' href={'/projects/'+id}>{'Explore >'}</Link>
-    </> : [<Link key='back' href='/projects'>{'< Go Back'}</Link>,links];
+    </> : [<Link key='back' href='/projects'>{'< Projects'}</Link>,links];
     return (
         <div id={id} className={styles.container}>
             <div className={styles.previews}>
