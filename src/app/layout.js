@@ -5,11 +5,6 @@ import Footer from '@/components/Footer'
 
 const quicksand = Quicksand({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Angelo Hague',
-  description: 'Computer Science Graduate and Web Designer',
-}
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={quicksand.className}>

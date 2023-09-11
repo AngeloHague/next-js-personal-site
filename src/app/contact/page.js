@@ -6,6 +6,7 @@ import ContactLinks from "./ContactLinks";
 export const metadata = {
   title: 'Contact | Angelo Hague',
   description: 'Here are all the ways you can get in touch with me, including a nice little form below.',
+  keywords: ['web developer linkedin', 'web developer twitter', 'web developer github', 'contact web developer', 'web designer linkedin', 'web designer twitter', 'web designer github', 'contact web designer'].join(', ')
 }
 
 

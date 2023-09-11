@@ -143,6 +143,10 @@
     border-radius: 16px;
     background: rgba(13, 6, 32, 0.40);
     backdrop-filter: blur(4px);
+    
+    h2:not(:first-of-type) {
+        padding-top: 8px;
+    }
 
     p,
     .links a {
@@ -155,6 +159,7 @@
         letter-spacing: 1.2px;
         text-transform: uppercase;
     }
+    
     p { margin: 16px 0; }
     .links {
         padding: 0;

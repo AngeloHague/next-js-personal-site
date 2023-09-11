@@ -7,6 +7,7 @@ import fs from 'fs'
 
 import desktop1 from '@/assets/desktop_overlay_1.svg'
 import mobile1 from '@/assets/mobile_overlay_1.svg'
+import blur from '@/assets/projectBlur.png'
 import Link from 'next/link';
 
 export function ProjectPreview({ id, project, preview='', markdown }) {
@@ -17,9 +18,9 @@ export function ProjectPreview({ id, project, preview='', markdown }) {
         return <li key='key'><a href={link.href} target='_blank'>{link.text}</a></li>
     }) : null;
     const buttons = (preview) ? <>
-        {preview=='star' ? <Link key='back'>{'< Go Back'}</Link> : null}
+        {preview=='star' ? <Link key='back'>{'< Projects'}</Link> : null}
         <Link key='explore' href={'/projects/'+id}>{'Explore >'}</Link>
-    </> : [<Link key='back' href='/projects'>{'< Go Back'}</Link>,links];
+    </> : [<Link key='back' href='/projects'>{'< Projects'}</Link>,links];
     return (
         <div id={id} className={styles.container}>
             <div className={styles.previews}>
@@ -27,7 +28,7 @@ export function ProjectPreview({ id, project, preview='', markdown }) {
                     <div className={styles.imageContainer}>
                         {fs.existsSync(desktop_preview) ?
                         <Image
-                            src={'/previews/'+id+'-desktop-preview.png'} fill
+                            src={'/previews/'+id+'-desktop-preview.png'} fill blur={blur}
                             sizes='(max-width: 480px) 80vw, (max-width: 1200px) 80vw, 50vw'
                         /> : <p className={styles.missingImage}>{'No desktop \npreview :('}</p>}
                     </div>
@@ -40,7 +41,7 @@ export function ProjectPreview({ id, project, preview='', markdown }) {
                     <div className={styles.imageContainer}>
                         {fs.existsSync(mobile_preview) ?
                         <Image
-                            src={'/previews/'+id+'-mobile-preview.png'} fill
+                            src={'/previews/'+id+'-mobile-preview.png'} fill blur={blur}
                             sizes='(max-width: 480px) 80vw, (max-width: 1200px) 80vw, 50vw'
                         /> : <p className={styles.missingImage}>{'No mobile \npreview :('}</p>}
                     </div>
