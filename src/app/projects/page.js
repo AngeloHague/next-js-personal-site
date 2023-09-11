@@ -30,7 +30,7 @@ export default function page() {
                     </div>
                     <div id={styles.listView}>
                         <PreviewList projectMetadata={projectMetadata} />
-                        {/* <SideNav slugs={Object.keys(projectMetadata)} includeHero={false} /> */}
+                        <SideNav slugs={Object.keys(projectMetadata)} includeHero={false} />
                     </div>
                 </div>
             </div>
