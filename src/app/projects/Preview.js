@@ -7,8 +7,9 @@ import fs from 'fs'
 
 import desktop1 from '@/assets/desktop_overlay_1.svg'
 import mobile1 from '@/assets/mobile_overlay_1.svg'
-import blur from '@/assets/projectBlur.png'
 import Link from 'next/link';
+
+const blur = '/projectBlur.png'
 
 export function ProjectPreview({ id, project, preview='', markdown }) {
     const desktop_preview = path.join(process.cwd(), 'public', 'previews', id+'-desktop-preview.png');
@@ -28,8 +29,9 @@ export function ProjectPreview({ id, project, preview='', markdown }) {
                     <div className={styles.imageContainer}>
                         {fs.existsSync(desktop_preview) ?
                         <Image
-                            src={'/previews/'+id+'-desktop-preview.png'} fill blur={blur}
+                            src={'/previews/'+id+'-desktop-preview.png'} fill
                             sizes='(max-width: 480px) 80vw, (max-width: 1200px) 80vw, 50vw'
+                            placeholder='blur' blurDataURL={blur}
                         /> : <p className={styles.missingImage}>{'No desktop \npreview :('}</p>}
                     </div>
                     <Image
@@ -41,8 +43,9 @@ export function ProjectPreview({ id, project, preview='', markdown }) {
                     <div className={styles.imageContainer}>
                         {fs.existsSync(mobile_preview) ?
                         <Image
-                            src={'/previews/'+id+'-mobile-preview.png'} fill blur={blur}
+                            src={'/previews/'+id+'-mobile-preview.png'} fill
                             sizes='(max-width: 480px) 80vw, (max-width: 1200px) 80vw, 50vw'
+                            placeholder='blur' blurDataURL={blur}
                         /> : <p className={styles.missingImage}>{'No mobile \npreview :('}</p>}
                     </div>
                     <Image
