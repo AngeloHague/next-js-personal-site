@@ -4,7 +4,7 @@
         "id": "who",
         "title": "Who I am",
         "contents": [
-            {"markdown": "I am an aspiring **web developer** and **University of Lincoln Computer Science Graduate**."},
+            {"markdown": "I am a freelance **web developer** and **University of Lincoln Computer Science Graduate**."},
             {"animation": "lincoln_cathedral"},
             {"markdown": "I have worked with clients to create both static and dynamic websites."},
             {"markdown": "Throughout my studies, I have gained **valuable experience** working with a variety of different programming languages."},

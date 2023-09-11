@@ -7,6 +7,12 @@ import styles from './page.module.scss'
 import previewStyles from '../projects/preview.module.scss'
 import ContactLinks from "../contact/ContactLinks";
 
+
+export const metadata = {
+  title: 'About Me | Angelo Hague',
+  description: 'Freelance Web Developer and University of Lincoln Computer Science Graduate. Available for work.',
+}
+
 function ReadMore({text='Find out more', href, center=false}) {
   const linkStyle = (center) ? styles.readMore : [styles.readMore, styles.center].join(' ');
   return (<a className={linkStyle} href={href}>{text}</a>)

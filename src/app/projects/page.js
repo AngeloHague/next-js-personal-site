@@ -5,6 +5,13 @@ import styles from './page.module.scss'
 import { PreviewList } from './Preview'
 import { SideNav } from '@/components/SideNav'
 
+
+export const metadata = {
+    title: 'Projects | Angelo Hague',
+    description: 'Here you can find some of my projects. I have worked with a number of web technologies; notably Shopify Liquid, Wordpress, Next.js and React.',
+    keywords: ['web design portfolio', 'web development portfolio', 'web designer portfolio',  'web developer portfolio'].join(', ')
+}
+
 export default function page() {
     return (
         <main>
