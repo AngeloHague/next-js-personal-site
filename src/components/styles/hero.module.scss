@@ -138,7 +138,8 @@
   }
 
   @media (min-width: 480px) {
-    .hero .space h3 {
+    .hero .space h3,
+    .hero.home .space h3 {
       letter-spacing: .25em;
     }
   }
@@ -149,7 +150,8 @@
     margin: 0;
     text-align: center;
   }
-  .hero .space h3 {
+  .hero .space h3,
+  .hero.home .space h3 {
     width: 100%;
     text-align: center;
     letter-spacing: 0.6em;
