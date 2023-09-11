@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 
 function NavBar({ pathname }) {
@@ -9,12 +10,23 @@ function NavBar({ pathname }) {
         ['Contact','/contact']
     ]
 
+    function toggleOpen(e) {
+        const cb = document.getElementById('hamburger');
+        cb.click();
+    }
+
     return (
         <header id="nav">
             <div class="nav_bar"></div>
             <input type="checkbox" id="side_menu_checkbox" />
-            <label id="hamburger" for="side_menu_checkbox">
-                <a tabIndex='1'><span /></a>
+            <label id="hamburger" for="side_menu_checkbox" tabIndex='1' onKeyDown={(event) => {
+                    if (event.key === 'Enter') {
+                        event.preventDefault();
+                        toggleOpen();
+                    }
+                }}
+            >
+                <span />
             </label>
             <nav>
                 <div className="logo"><span>Angelo Hague</span> / {pathname}</div>
