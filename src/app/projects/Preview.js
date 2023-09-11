@@ -16,15 +16,15 @@ export function ProjectPreview({ id, project, preview='', markdown }) {
     const mobile_preview = path.join(process.cwd(), 'public', 'previews', id+'-mobile-preview.png');
     const links = (project.links) ? Object.keys(project.links).map((key) => {
         const link = project.links[key];
-        return <li key='key'><a href={link.href} target='_blank'>{link.text}</a></li>
+        return <li key='key'><a tabIndex={0} href={link.href} target='_blank'>{link.text}</a></li>
     }) : null;
     const buttons = (preview) ? <>
-        {preview=='star' ? <Link key='back'>{'< Projects'}</Link> : null}
-        <Link key='explore' href={'/projects/'+id}>{'Explore >'}</Link>
-    </> : [<Link key='back' href='/projects'>{'< Projects'}</Link>,links];
+        {preview=='star' ? <Link tabIndex={0} key='back'>{'< Projects'}</Link> : null}
+        <Link tabIndex={0} key='explore' href={'/projects/'+id}>{'Explore >'}</Link>
+    </> : [<Link tabIndex={0} key='back' href='/projects'>{'< Projects'}</Link>,links];
     return (
         <div id={id} className={styles.container}>
-            <div className={styles.previews}>
+            <div className={styles.previews} tabIndex={0}>
                 <div className={styles.desktop}>
                     <div className={styles.imageContainer}>
                         {fs.existsSync(desktop_preview) ?
