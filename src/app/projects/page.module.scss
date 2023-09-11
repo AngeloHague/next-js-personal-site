@@ -280,8 +280,7 @@ section.project {
     transform: scaleY(-1);
 }
 
-#starView, #listView {
-    display: none;
+#listView {
     width: 100%;
     height: 100%;
 }
@@ -336,7 +335,7 @@ section.project {
     .radio { cursor: pointer; }
     .container { 
         width: 100%; 
-        height: 95%;
+        height: 100%;
         box-sizing: border-box;
     }
     #starSelector:checked {

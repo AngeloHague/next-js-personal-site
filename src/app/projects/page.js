@@ -21,20 +21,7 @@ export default function page() {
             containerClasses={styles.heroContent}
           >
             <div className={styles.viewSelector}>
-                <input type="radio" id={styles.starSelector} class={styles.radio} name='viewSelector' />
-                <label for={styles.starSelector}>
-                    <span />
-                    Star View
-                </label>
-                <input type="radio" id={styles.listSelector} class={styles.radio} name='viewSelector' checked />
-                <label for={styles.listSelector}>
-                    <span />
-                    List View
-                </label>
                 <div className={styles.container}>
-                    <div id={styles.starView}>
-                        <h3>Under development</h3>
-                    </div>
                     <div id={styles.listView}>
                         <PreviewList projectMetadata={projectMetadata} />
                         <SideNav slugs={Object.keys(projectMetadata)} includeHero={false} />
