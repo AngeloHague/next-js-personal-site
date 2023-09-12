@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import { SideNav } from "@/components/SideNav";
 import ContactForm from "./ContactForm";
 import ContactLinks from "./ContactLinks";
+import styles from './page.module.css'
 
 export const metadata = {
   title: 'Contact | Angelo Hague',
@@ -15,11 +16,11 @@ export default function ContactPage() {
       <main>
         <div className="sections">
           <HeroSection
-            subtitle='Find me on'
             btn_text='Or use this form'
             btn_link={'#form'}
             low_moon={true}
           >
+            <h3 className={styles.findMe}>Find me on</h3>
             <ContactLinks />
           </HeroSection>
           <SideNav slugs={['#form']} />

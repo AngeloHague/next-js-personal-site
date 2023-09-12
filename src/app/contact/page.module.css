@@ -7,6 +7,13 @@
     gap: 24px;
 }
 
+.findMe {
+    letter-spacing: 0.5em !important;
+    margin-right: -0.5em !important;
+    display: block;
+    padding-bottom: 4px !important;
+}
+
 .links li {
     display: block;
     width: 40px;
