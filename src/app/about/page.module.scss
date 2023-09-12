@@ -16,6 +16,11 @@
     max-width: 968px;
     padding-top: 70px;
     margin: auto;
+    p {
+        text-transform: none !important;
+        font-size: 1.8rem !important;
+        font-weight: 400 !important;
+    }
     .center {
         text-align: center;
         margin: 0;
