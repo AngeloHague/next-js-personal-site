@@ -32,7 +32,7 @@ export default function AboutPage() {
                 <Image className={styles.planet} src={Earth} width={138} height={138} />
                 <div className={previewStyles.details}>
                   <h2>University</h2>
-                  <p>In 2022, I graduated the University of Lincoln with a first class degree in Computer Science.</p>
+                  <p>In 2022, I graduated the University of Lincoln with a degree in Computer Science.</p>
                   <p>Throughout my studies, I worked with a variety of programming languages such as C++, Python, MATLAB, HTML, CSS and Javascript.</p>
                   <p>In my first year, I was introduced to Web Design and Development, which piqued my interest due to its mix of creativity and programming. In the later years of my studies, I was able to revisit web technologies and develop a full-stack React Native Poker application, further igniting my interest in web development.</p>
                   <h2>Freelancing</h2>
