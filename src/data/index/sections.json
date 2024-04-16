@@ -1,7 +1,7 @@
 {
     "who": {
         "order": 1,
-        "id": "who",
+        "id": "university",
         "title": "1. University",
         "contents": [
             {"markdown": "In 2022, I graduated the University of Lincoln with a BSc in Computer Science."},
@@ -14,7 +14,7 @@
     },
     "what": {
         "order": 2,
-        "id": "what",
+        "id": "freelancing",
         "title": "2. Freelance Work",
         "contents": [
             {"markdown": "After graduating, I wanted to expand upon my experience with web technologies, and reached out to an old employer, Zebra Menswear, to improve their existing website."},
@@ -27,8 +27,8 @@
     },
     "how": {
         "order": 3,
-        "id": "how",
-        "title": "Agency Employment",
+        "id": "employment",
+        "title": "3. Agency Employment",
         "contents": [
             {"markdown": "Now, I work as a full-time Junior Web Developer with a marketing agency. I help design, develop and maintain a magnitude of WordPress websites."},
             {"animation": "responsive_design"},
