@@ -26,10 +26,6 @@
         "description": "A custom Shopify Liquid template for Chesterfield Designer Clothing Store, created from scratch.",
         "type": "shopify",
         "links": {
-            "github": {
-                "text": "source",
-                "href": "https://github.com/AngeloHague/Zebra-Menswear"
-            },
             "external_link": {
                 "text": "link",
                 "href": "https://www.zebramenswear.co.uk/"
