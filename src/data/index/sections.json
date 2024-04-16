@@ -2,36 +2,37 @@
     "who": {
         "order": 1,
         "id": "who",
-        "title": "Who I am",
+        "title": "1. University",
         "contents": [
-            {"markdown": "I am a freelance **web developer** and **University of Lincoln Computer Science Graduate**."},
+            {"markdown": "In 2022, I graduated the University of Lincoln with a BSc in Computer Science."},
             {"animation": "lincoln_cathedral"},
-            {"markdown": "I have worked with clients to create both static and dynamic websites."},
-            {"markdown": "Throughout my studies, I have gained **valuable experience** working with a variety of different programming languages."},
-            {"markdown": "I am **available for commision** in Web Development and also **looking for full-time work**."},
+            {"markdown": "I gained valuable experience working with React Native and Firebase, which sparked an interest in web development."},
+            {"markdown": "I used these technologies, along with Colyseus.js, to make a full-stack poker application - going beyond the initial required task of simply making an app."},
+            {"markdown": "From this, I then decided to explore Next.js for making my first web portfolio."},
             {"markdown": "### [Find out more](/about)"}
         ]
     },
     "what": {
         "order": 2,
         "id": "what",
-        "title": "What I have done",
+        "title": "2. Freelance Work",
         "contents": [
-            {"markdown": "Most recently, I developed **this website using Next.js**."},
+            {"markdown": "After graduating, I wanted to expand upon my experience with web technologies, and reached out to an old employer, Zebra Menswear, to improve their existing website."},
             {"animation": "responsive_design"},
-            {"markdown": "I have also **worked with multiple clients** to produce other **responsive websites**."},
-            {"markdown": "I have developed **dynamic e-commerce templates** using Shopify, **static sites**, as well as a **full-stack React Poker application**."},
+            {"markdown": "I taught myself Shopify Liquid, to allow me to redesign and build them a new website; resulting in a 30% increase in online trade."},
+            {"markdown": "I also worked with London-based archival vintage store, Ooto London, to design and develop a simple minimal website for advertising purposes."},
+            {"markdown": "From this, I also found some freelance agency work, in which I was able to begin working on WordPress sites, putting my design skills to use and gaining experience in PHP development."},
             {"markdown": "### [View my work](/projects)"}
         ]
     },
     "how": {
         "order": 3,
         "id": "how",
-        "title": "How I can help",
+        "title": "Agency Employment",
         "contents": [
-            {"markdown": "With **years of study** and experience with **agile methodologies**, I am an excellent candidate to help craft you the perfect site or application."},
+            {"markdown": "Now, I work as a full-time Junior Web Developer with a marketing agency. I help design, develop and maintain a magnitude of WordPress websites."},
             {"animation": "responsive_design"},
-            {"markdown": "Get in touch, and we can discuss and assess your needs and progress from there!"},
+            {"markdown": "I work mostly on front-end development (PHP, HTML, CSS/SCSS and JavaScript), but sometimes have the opportunity to perform back-end development tasks, such as backend API integrations. I hope to be exposed to more back-end work, to move towards my ultimate goal of being a full-stack developer."},
             {"markdown": "### [Get in touch](/contact)"}
         ]
     }
